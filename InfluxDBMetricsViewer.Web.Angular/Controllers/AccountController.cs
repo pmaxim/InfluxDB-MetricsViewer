@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
-namespace MetaMetricsViewer.Web.Angular.Controllers
+namespace InfluxDB_MetricsViewer.Web.Angular.Controllers
 {
     [Route("Account")]
     public class AccountController : ControllerBase

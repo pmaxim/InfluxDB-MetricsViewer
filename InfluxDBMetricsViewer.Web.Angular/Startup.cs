@@ -1,5 +1,3 @@
-using MetaMetrics.Api;
-using MetaMetricsViewer.Service;
 using MetaMetricsViewer.Web.Angular.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -12,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Identity.Web;
 
-namespace MetaMetricsViewer.Web.Angular
+namespace InfluxDB_MetricsViewer.Web.Angular
 {
     public class Startup
     {
@@ -47,7 +45,7 @@ namespace MetaMetricsViewer.Web.Angular
 
             services.AddSingleton<MetaMetricsClientService>();
             services.AddSingleton<InfluxDBService>();
-            services.AddTransient<IMetaMetricsService, MetaMetricsService>();
+            services.AddTransient<IinfluxDbMetricsService, MetaMetricsService>();
 
             services.AddControllersWithViews()
                 .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);

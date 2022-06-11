@@ -18,12 +18,12 @@ namespace MetaMetricsViewer.Web.Angular.Controllers
     [Route("[controller]/[action]")]
     public class MetaMetricsController : ControllerBase
     {
-        private readonly IMetaMetricsService _service;
+        private readonly IinfluxDbMetricsService _service;
         private readonly IConfiguration _configuration;
         private readonly ILogger<MetaMetricsController> _logger;
         private IMemoryCache cache;
 
-        public MetaMetricsController(IMetaMetricsService service,
+        public MetaMetricsController(IinfluxDbMetricsService service,
             IMemoryCache memoryCache,
             IConfiguration configuration, ILogger<MetaMetricsController> logger)
         {

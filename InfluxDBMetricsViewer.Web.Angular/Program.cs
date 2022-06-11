@@ -3,6 +3,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NLog.Web;
 using System;
+using InfluxDB_MetricsViewer.Web.Angular;
 
 namespace MetaMetricsViewer.Web.Angular
 {
