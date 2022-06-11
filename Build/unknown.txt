@@ -1,5 +1,0 @@
-metakis__editchronicdiagconfig
-metakis__test
-metakis__wpf_e1pepp
-metakis__wpf_opencsv
-metakisdbservice__fallupdatermdk
