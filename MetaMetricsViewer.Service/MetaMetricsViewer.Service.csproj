@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <Import Project="..\MetaMetricsViewer.Api.Shared\MetaMetricsViewer.Api.Shared.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <PackageReference Include="InfluxDB.Client" Version="4.0.0" />
+    <PackageReference Include="InfluxDB.Client.Linq" Version="4.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MK.Classification.P, Version=2.0.7981.34095, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\External\MK.Classification.P.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

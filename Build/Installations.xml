@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Installations>
+  <Entry Server="SRV-BKW-META01" Version="2.0.8126 / 01.04. 12:00" License="cefd73b3-22c1-40d7-9264-98a8e8c5d062" Display="AGAPLESION\ Wuppertal" Products="MetaKIS" Key="AGAPLESION\ Wuppertal" LastData="202204131902" />
+  <Entry Server="VM-CODING-WS08F" Version="2.0.7986 / 12.11. 10:00" License="13b01711-6442-d4ba-9a77-6f392538f99a" Display="AMC" IK="260320780" Standort="771006" Products="MetaKIS" Key="AMC" LastData="202204131902" />
+  <Entry Server="HBSRZ-META-01" Version="2.0.8126 / 01.04. 12:00" License="d50c5eca-65aa-40a2-bf23-61360de4a79c" Display="Ameos.P21" Products="MetaKIS" Key="Ameos.P21" LastData="202204130959" />
+  <Entry Server="HBSRZ-META-01" Version="2.0.8126 / 01.04. 12:00" License="d50c5eca-65aa-40a2-bf23-61360de4a79c" Display="Ameos.Schoenebeck" Products="MetaKIS" Key="Ameos.Schoenebeck" LastData="202204131902" />
+  <Entry Server="SRV-METAKIS-01" Version="2.0.8126 / 01.04. 12:00" License="f24f158d-2cc0-4871-bec1-c5ef78e01d67" Display="Arnsberg" Products="MetaKIS" Key="Arnsberg" LastData="202204131902" />
+  <Entry Server="HAM-APMET01" Version="2.0.8126 / 01.04. 12:00" License="ae4af267-7821-4f5b-80fc-e9f46e54464f" Display="AsklepiosHHAKA" Products="MetaKIS" Key="AsklepiosHHAKA" LastData="202204131902" />
+  <Entry Server="HAM-APMET02" Version="2.0.8126 / 01.04. 12:00" License="ae4af267-7821-4f5b-80fc-e9f46e54464f" Display="AsklepiosHHAKB" Products="MetaKIS" Key="AsklepiosHHAKB" LastData="202204131902" />
+  <Entry Server="HAM-APMET01" Version="2.0.8126 / 01.04. 12:00" License="ae4af267-7821-4f5b-80fc-e9f46e54464f" Display="AsklepiosHHAKH" Products="MetaKIS" Key="AsklepiosHHAKH" LastData="202204131902" />
+  <Entry Server="HAM-APMET02" Version="2.0.8126 / 01.04. 12:00" License="ae4af267-7821-4f5b-80fc-e9f46e54464f" Display="AsklepiosHHAKN" Products="MetaKIS" Key="AsklepiosHHAKN" LastData="202204131902" />
+  <Entry Server="HAM-APMET01" Version="2.0.8126 / 01.04. 12:00" License="ae4af267-7821-4f5b-80fc-e9f46e54464f" Display="AsklepiosHHAKS" Products="MetaKIS" Key="AsklepiosHHAKS" LastData="202204131902" />
+  <Entry Server="HAM-APMET02" Version="2.0.8126 / 01.04. 12:00" License="ae4af267-7821-4f5b-80fc-e9f46e54464f" Display="AsklepiosHHAKW" Products="MetaKIS" Key="AsklepiosHHAKW" LastData="202204131903" />
+  <Entry Server="HAM-APMET02" Version="2.0.8126 / 01.04. 12:00" License="ae4af267-7821-4f5b-80fc-e9f46e54464f" Display="AsklepiosHHRIS" Products="MetaKIS" Key="AsklepiosHHRIS" LastData="202204131903" />
+  <Entry Server="DOBMETA01" Version="2.0.8126 / 01.04. 12:00" License="9e3c167b-09f0-4aeb-bf58-c4068f6e1dad" Display="BadDoberan" Products="MetaKIS" Key="BadDoberan" LastData="202204131903" />
+  <Entry Server="BSJKSV00047" Version="2.0.8126 / 01.04. 12:00" License="261a02d2-2ac8-485a-bcab-cf110a60eca6" Display="Berlin\ Sankt\ Joseph" Products="MetaKIS" Key="Berlin\ Sankt\ Joseph" LastData="202204131903" />
+  <Entry Server="GZVWSMETAKIS02" Version="2.0.8126 / 01.04. 12:00" License="1cfd35de-489c-4dac-9ac4-ace517e643ae" Display="Bezirk\ Schwaben\ -\ AU" Products="MetaKIS" Key="Bezirk\ Schwaben\ -\ AU" LastData="202204110259" />
+  <Entry Server="GZVWSMETAKIS02" Version="2.0.7986 / 12.11. 10:00" License="1cfd35de-489c-4dac-9ac4-ace517e643ae" Display="Bezirk\ Schwaben\ -\ DON" Products="MetaKIS" Key="Bezirk\ Schwaben\ -\ DON" LastData="202204131903" />
+  <Entry Server="GZVWSMETAKIS02" Version="2.0.8126 / 01.04. 12:00" License="1cfd35de-489c-4dac-9ac4-ace517e643ae" Display="Bezirk\ Schwaben\ -\ GZ" Products="MetaKIS" Key="Bezirk\ Schwaben\ -\ GZ" LastData="202204131903" />
+  <Entry Server="GZVWSMETAKIS02" Version="2.0.7986 / 12.11. 10:00" License="1cfd35de-489c-4dac-9ac4-ace517e643ae" Display="Bezirk\ Schwaben\ -\ KE" Products="MetaKIS" Key="Bezirk\ Schwaben\ -\ KE" LastData="202204131903" />
+  <Entry Server="GZVWSMETAKIS02" Version="2.0.8126 / 01.04. 12:00" License="1cfd35de-489c-4dac-9ac4-ace517e643ae" Display="Bezirk\ Schwaben\ -\ KF" Products="MetaKIS" Key="Bezirk\ Schwaben\ -\ KF" LastData="202204131903" />
+  <Entry Server="GZVWSMETAKIS02" Version="2.0.7986 / 12.11. 10:00" License="1cfd35de-489c-4dac-9ac4-ace517e643ae" Display="Bezirk\ Schwaben\ -\ LD" Products="MetaKIS" Key="Bezirk\ Schwaben\ -\ LD" LastData="202204131903" />
+  <Entry Server="GZVWSMETAKIS02" Version="2.0.7986 / 12.11. 10:00" License="1cfd35de-489c-4dac-9ac4-ace517e643ae" Display="Bezirk\ Schwaben\ -\ MM" Products="MetaKIS" Key="Bezirk\ Schwaben\ -\ MM" LastData="202204131903" />
+  <Entry Server="GZVWSMETAKIS02" Version="2.0.7986 / 12.11. 10:00" License="1cfd35de-489c-4dac-9ac4-ace517e643ae" Display="Bezirk\ Schwaben\ -\ OG" Products="MetaKIS" Key="Bezirk\ Schwaben\ -\ OG" LastData="202204131903" />
+  <Entry Server="DB-METAKIS-1" Version="2.0.8126 / 01.04. 12:00" License="bcad5941-1e1f-42ad-86a4-7d83e88ba08d" Display="Bielefeld" Products="MetaKIS" Key="Bielefeld" LastData="202204131903" />
+  <Entry Server="GZBMETATEXT01" Version="2.0.8126 / 31.03. 23:00" License="7260f89d-9469-4a85-9fa4-75606f0b1f96" Display="Bitterfeld" Products="MetaKIS, MetaTEXT" Key="Bitterfeld" LastData="202204131903" />
+  <Entry Server="K98VAPPP2D00015" Version="2.0.8126 / 31.03. 23:00" License="66e640cc-3894-4db7-81f1-3973c5f6dc8e" Display="Bochum" Products="MetaKIS, MetaTEXT" Key="Bochum" LastData="202204131903" />
+  <Entry Server="K98VAPPP2D00014" Version="2.0.8126 / 01.04. 12:00" License="587ba8f5-2474-49ba-a0b7-a42acb38379f" Display="Bottrop" Products="MetaKIS" Key="Bottrop" LastData="202204131903" />
+  <Entry Server="HEHMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="87c130b3-0182-4ffd-8fbb-4a8ad981403d" Display="BraunschweigHEH" Products="MetaKIS" Key="BraunschweigHEH" LastData="202204131903" />
+  <Entry Server="METAKISSRV" Version="2.0.8126 / 01.04. 12:00" License="0bb9e605-a293-4ae2-aa68-270025712f2d" Display="Brilon" Products="MetaKIS" Key="Brilon" LastData="202204131903" />
+  <Entry Server="KKFMKIS001" Version="2.0.8126 / 01.04. 12:00" License="e9dac02d-3297-446b-919b-22fe1453e558" Display="Buchloe_Orbis" Products="MetaKIS" Key="Buchloe_Orbis" LastData="202204131903" />
+  <Entry Server="SMIS" Version="2.0.7986 / 12.11. 10:00" License="2f7d7443-6665-4240-9755-5e46976fee6f" Display="Cerner_medico_SNEXT" Products="MetaKIS" Key="Cerner_medico_SNEXT" LastData="202204131903" />
+  <Entry Server="SMIS" Version="2.0.7986 / 12.11. 10:00" License="2f7d7443-6665-4240-9755-5e46976fee6f" Display="Cerner_medico_SQA" Key="Cerner_medico_SQA" LastData="202203171659" />
+  <Entry Server="CRM-METAHMS01" Version="2.0.7986 / 12.11. 10:00" License="0ace4b67-25c3-440f-9430-0634453483c2" Display="CernerMesse2MK" Products="MetaKIS" Key="CernerMesse2MK" LastData="202204131903" />
+  <Entry Server="N-BDLLGB3" Version="2.0.8130 / 05.04. 10:00" License="66017f32-4501-4b38-8e35-f512cf42f9a4" Display="CernerPeterLaptop" Products="MetaKIS" Key="CernerPeterLaptop" LastData="202204131903" />
+  <Entry Server="ALL-TEST-METAKI" Version="2.0.7986 / 12.11. 10:00" License="84fc809b-e63b-09e2-b4ea-1a61d8349c6b" Display="CGM\ G3\ MetaKIS\ Testsystem" Key="CGM\ G3\ MetaKIS\ Testsystem" LastData="202204011559" />
+  <Entry Server="N-37SJR73" Version="2.0.7986 / 12.11. 10:00" License="da3aa3a7-76f6-47ed-965a-77c064a5c113" Display="cgm\ karin" Key="cgm\ karin" LastData="202203281659" />
+  <Entry Server="N-5FSJR73" Version="2.0.8118 / 23.03. 23:00" License="b00c589a-e584-71d3-4b7a-3f91f6e99c6b" Display="CGMBudig" Products="MetaKIS" Key="CGMBudig" LastData="202204111059" />
+  <Entry Server="N-PF1RWYJ8" Version="2.0.8104 / 09.03. 23:00" License="c16d7a03-c5fb-4123-a4c1-7ba3dc462be5" Display="CGMOertel" Products="MetaKIS" Key="CGMOertel" LastData="202204131859" />
+  <Entry Server="N-CLGF593" Version="2.0.7986 / 12.11. 10:00" License="143a7093-6430-523d-1c93-e791385bb26c" Display="CGMReginaBeckmann" Key="CGMReginaBeckmann" LastData="202203282159" />
+  <Entry Server="N-6S2P493" Version="2.0.7986 / 12.11. 10:00" License="99eee943-91f1-af60-d753-b0f0fe9a6e71" Display="CGMWeinmann" Key="CGMWeinmann" LastData="202204061559" />
+  <Entry Server="VEC-MEK01" Version="2.0.8126 / 01.04. 12:00" License="709643da-d00c-4f41-9fbf-f7654337cf7a" Display="Cloppenburg" Products="MetaKIS" Key="Cloppenburg" LastData="202204131903" />
+  <Entry Server="VMKAPITO" Version="2.0.8126 / 01.04. 12:00" License="1f0b4608-8d32-4f73-b8aa-da21f3ba1ca4" Display="Crailsheim" Products="MetaKIS" Key="Crailsheim" LastData="202204131903" />
+  <Entry Server="DEV-METAKIS-SRV" Version="2.0.8133 / 08.04. 17:00" License="f5e467c9-cef9-13d6-974a-e623cbc0510e" Display="dev-metakis-srv" Products="MetaTEXT" Key="dev-metakis-srv" LastData="202203231559" />
+  <Entry Server="DONW2K16MEKI" Version="2.0.8126 / 01.04. 12:00" License="b1bdd262-c7b3-4066-897d-5fdcc3689a42" Display="Donauwoerth" Products="MetaKIS" Key="Donauwoerth" LastData="202204131903" />
+  <Entry Server="N-65ZD593" Version="2.0.7986 / 12.11. 10:00" License="92b84db4-9a75-e073-7684-c1192f2d5797" Display="Dorschner" Products="MetaKIS" Key="Dorschner" LastData="202204131459" />
+  <Entry Server="K98VAPPP2D00014" Version="2.0.8126 / 01.04. 12:00" License="7b657c09-e124-445e-a71a-e0798a607e24" Display="Dortmund" Products="MetaKIS" Key="Dortmund" LastData="202204131903" />
+  <Entry Server="GMNMDKMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="de85d21c-bc84-45a2-aeff-81a1cf58cee1" Display="DRK\ Grimmen" Products="MetaKIS" Key="DRK\ Grimmen" LastData="202204131903" />
+  <Entry Server="SRV-METATEXT" Version="2.0.8126 / 31.03. 23:00" License="eb0cb57e-629f-2841-7e51-3ee66e054d7b" Display="DRK\ Kassel" Products="MetaKIS, MetaTEXT" Key="DRK\ Kassel" LastData="202204131903" />
+  <Entry Server="W2016-METAKIS" Version="2.0.8126 / 01.04. 12:00" License="451fb8f8-1b5e-4e66-ac62-7b080ae661ac" Display="DRKTeterow" Products="MetaKIS" Key="DRKTeterow" LastData="202204131903" />
+  <Entry Server="VM-WIN189" Version="2.0.8124 / 30.03. 10:00" License="5309a57f-65d2-fcf4-50c1-a5163d6f3997" Display="Empolis" Products="MetaKIS, MetaTEXT" Key="Empolis" LastData="202204131903" />
+  <Entry Server="SAHMETATEXT" Version="2.0.8126 / 31.03. 23:00" License="0f76b2c8-0c93-4621-81c7-a67b3051aab2" Display="Eschweiler" Products="MetaKIS, MetaTEXT" Key="Eschweiler" LastData="202204131903" />
+  <Entry Server="METAKIS" Version="2.0.8132 / 06.04. 23:00" License="796b99e5-96fd-4054-8890-8281582a6fb4" Display="Esslingen" Products="MetaKIS" Key="Esslingen" LastData="202204131903" />
+  <Entry Server="VM-METAKIS" Version="2.0.8126 / 01.04. 12:00" License="15691c98-a013-4189-a1bc-e5ae4d963b9f" Display="FlensburgDrg" Products="MetaKIS" Key="FlensburgDrg" LastData="202204131903" />
+  <Entry Server="VM-METAKIS" Version="2.0.8126 / 01.04. 12:00" License="15691c98-a013-4189-a1bc-e5ae4d963b9f" Display="FlensburgNF" Products="MetaKIS" Key="FlensburgNF" LastData="202204131903" />
+  <Entry Server="VM-METAKIS" Version="2.0.8126 / 01.04. 12:00" License="15691c98-a013-4189-a1bc-e5ae4d963b9f" Display="FlensburgPepp" Products="MetaKIS" Key="FlensburgPepp" LastData="202204131903" />
+  <Entry Server="SRV-METAKIS" Version="2.0.8126 / 01.04. 12:00" License="9910a56e-a60d-4e82-ad86-5e2703cc9ea8" Display="Freising" Products="MetaKIS" Key="Freising" LastData="202204131903" />
+  <Entry Server="KKFMKIS001" Version="2.0.8126 / 01.04. 12:00" License="e9dac02d-3297-446b-919b-22fe1453e558" Display="fuessen_Orbis" Products="MetaKIS" Key="fuessen_Orbis" LastData="202204131903" />
+  <Entry Server="METAKIS" Version="2.0.8126 / 01.04. 12:00" License="a4d99e3a-1ca4-488c-af41-32e3adefa6ba" Display="Fulda" Products="MetaKIS" Key="Fulda" LastData="202204131903" />
+  <Entry Server="N-2WHHN73" Version="2.0.7986 / 12.11. 10:00" License="f4c33ed4-843e-91ec-2835-a58aeffbd7a9" Display="g2\ metakis\ installation" Products="MetaKIS" Key="g2\ metakis\ installation" LastData="202204131859" />
+  <Entry Server="K98VAPPP2D00014" Version="2.0.8126 / 01.04. 12:00" License="636e915b-adfb-41cd-891f-650a2b2bc677" Display="Gelsenkirchen" Products="MetaKIS" Key="Gelsenkirchen" LastData="202204131903" />
+  <Entry Server="RZ1VMAPLMETAKI1" Version="2.0.7986 / 12.11. 10:00" License="b3b36ccd-e933-9ae8-3cc6-680f1cdf4840" Display="GFO" Products="MetaKIS" Key="GFO" LastData="202204131903" />
+  <Entry Server="RZ1VMAPLMETATX2" Version="2.0.8126 / 31.03. 23:00" License="b3b36ccd-e933-9ae8-3cc6-680f1cdf4840" Display="GFO\ Bonn" Products="MetaKIS, MetaTEXT" Key="GFO\ Bonn" LastData="202204131903" />
+  <Entry Server="RZ1VMAPLMETAKI1" Version="2.0.8126 / 01.04. 12:00" License="b3b36ccd-e933-9ae8-3cc6-680f1cdf4840" Display="GFO\ Brühl" Products="MetaKIS" Key="GFO\ Brühl" LastData="202204131903" />
+  <Entry Server="RZ1VMAPLMETAKI1" Version="2.0.8126 / 01.04. 12:00" License="b3b36ccd-e933-9ae8-3cc6-680f1cdf4840" Display="GFO\ Niederrhein" Products="MetaKIS" Key="GFO\ Niederrhein" LastData="202204131903" />
+  <Entry Server="RZ1VMAPLMETAKI1" Version="2.0.8126 / 01.04. 12:00" License="b3b36ccd-e933-9ae8-3cc6-680f1cdf4840" Display="GFO\ Oberberg" Products="MetaKIS" Key="GFO\ Oberberg" LastData="202204131903" />
+  <Entry Server="RZ1VMAPLMETAKI1" Version="2.0.8126 / 01.04. 12:00" License="b3b36ccd-e933-9ae8-3cc6-680f1cdf4840" Display="GFO\ Rhein-Berg" Products="MetaKIS" Key="GFO\ Rhein-Berg" LastData="202204131903" />
+  <Entry Server="RZ1VMAPLMETAKI1" Version="2.0.8126 / 01.04. 12:00" License="b3b36ccd-e933-9ae8-3cc6-680f1cdf4840" Display="GFO\ St.\ Martinus" Products="MetaKIS" Key="GFO\ St.\ Martinus" LastData="202204131903" />
+  <Entry Server="RZ1VMAPLMETAKI1" Version="2.0.8126 / 01.04. 12:00" License="b3b36ccd-e933-9ae8-3cc6-680f1cdf4840" Display="GFO\ Troisdorf" Products="MetaKIS" Key="GFO\ Troisdorf" LastData="202204131903" />
+  <Entry Server="METAKIS2" Version="2.0.8126 / 01.04. 12:00" License="98d9e2a5-8853-434a-9029-661d50605595" Display="Görlitz" Products="MetaKIS" Key="Görlitz" LastData="202204131903" />
+  <Entry Server="SRV-MKS-01" Version="2.0.8126 / 01.04. 12:00" License="094450d5-e353-418a-b06c-d7df9bc83342" Display="Grevesmühlen" Products="MetaKIS" Key="Grevesmühlen" LastData="202204131903" />
+  <Entry Server="N-PF1PC5W3" Version="2.0.8126 / 01.04. 12:00" License="db372ee6-a69a-4516-8755-6267adb39a49" Display="HasskerlCGM" Products="MetaKIS" Key="HasskerlCGM" LastData="202204081759" />
+  <Entry Server="HEIMETAKIS02" Version="2.0.8126 / 31.03. 23:00" License="067a526e-6a29-4007-becd-c3d49d8c9f01" Display="Heide" Products="MetaKIS, MetaTEXT" Key="Heide" LastData="202204131903" />
+  <Entry Server="MC-METAKIS02" Version="2.0.8126 / 31.03. 23:00" License="f04da8b1-239c-44e1-9afe-dc4a041f2ac3" Display="Heidenheim" Products="MetaKIS, MetaTEXT" Key="Heidenheim" LastData="202204131903" />
+  <Entry Server="SNSRVMETEX" Version="2.0.8126 / 31.03. 23:00" License="a2555106-c228-477b-bdf4-213fac04c283" Display="HeliosSchwerin" Products="MetaKIS, MetaTEXT" Key="HeliosSchwerin" LastData="202204131904" />
+  <Entry Server="HAM-APMTXT01" Version="2.0.8124 / 30.03. 10:00" License="ae4af267-7821-4f5b-80fc-e9f46e54464f\ " Display="HHAsklepios" Products="MetaTEXT" Key="HHAsklepios" LastData="202204131904" />
+  <Entry Server="K98VAPPP2D00064" Version="2.0.8104 / 10.03. 16:00" License="9963a46d-8404-4fa5-afed-cf6cc3f643e7" Display="HostingK10" Products="MetaKIS" Key="HostingK10" LastData="202204081759" />
+  <Entry Server="K98VAPPP2D00064" Version="2.0.8104 / 10.03. 16:00" License="aef164ba-bbdf-4c71-9ed0-66ecbafd9a5b" Display="HostingK20" Products="MetaKIS" Key="HostingK20" LastData="202204081659" />
+  <Entry Server="K98VAPPP2D00064" Version="2.0.8104 / 10.03. 16:00" License="66e640cc-3894-4db7-81f1-3973c5f6dc8e" Display="HostingK30" Products="MetaKIS" Key="HostingK30" LastData="202204081659" />
+  <Entry Server="K98VAPPP2D00064" Version="2.0.8104 / 10.03. 16:00" License="587ba8f5-2474-49ba-a0b7-a42acb38379f" Display="HostingK40" Products="MetaKIS" Key="HostingK40" LastData="202204081759" />
+  <Entry Server="K98VAPPP2D00064" Version="2.0.8104 / 10.03. 16:00" License="7b657c09-e124-445e-a71a-e0798a607e24" Display="HostingK50" Products="MetaKIS" Key="HostingK50" LastData="202204081759" />
+  <Entry Server="K98VAPPP2D00064" Version="2.0.8104 / 10.03. 16:00" License="636e915b-adfb-41cd-891f-650a2b2bc677" Display="HostingK60" Products="MetaKIS" Key="HostingK60" LastData="202204081659" />
+  <Entry Server="K98VAPPP2D00064" Version="2.0.8104 / 10.03. 16:00" License="492f9cf1-fb85-4452-80f6-1c683c651340" Display="HostingK70" Products="MetaKIS" Key="HostingK70" LastData="202204081759" />
+  <Entry Server="K98VAPPP2D00064" Version="2.0.8104 / 10.03. 16:00" License="efd5b699-0f56-4da1-80b2-c76220f446c4" Display="HostingK80" Products="MetaKIS" Key="HostingK80" LastData="202204081659" />
+  <Entry Server="METAKIS2018" Version="2.0.8126 / 01.04. 12:00" License="8db4e0cb-23bd-4580-a8c5-2d21dbdd8fef" Display="Hoyerswerda" Products="MetaKIS" Key="Hoyerswerda" LastData="202204131904" />
+  <Entry Server="STIMETAKIS" Version="2.0.8104 / 09.03. 23:00" License="9ee732eb-8fa4-4bc6-803d-60ca70330d21" Display="Illertissen" Products="MetaKIS" Key="Illertissen" LastData="202204130759" />
+  <Entry Server="METAKIS" Version="2.0.8126 / 01.04. 12:00" License="60ac82dd-6a20-45d0-8dfd-070db72dffbc" Display="Immenhausen" Products="MetaKIS" Key="Immenhausen" LastData="202204131904" />
+  <Entry Server="KHIMETAKIS01" Version="2.0.8126 / 01.04. 12:00" License="f2986fb7-b641-4774-ae3a-e3d7e423f8eb" Display="Itzehoe" Products="MetaKIS" Key="Itzehoe" LastData="202204131904" />
+  <Entry Display="JörgBay" Key="JörgBay" />
+  <Entry Server="METAKIS" Version="2.0.8126 / 01.04. 12:00" License="6ca9f081-975c-42c8-9c02-84970f6c508c" Display="Josephs-Hospital\ Warendorf" Products="MetaKIS" Key="Josephs-Hospital\ Warendorf" LastData="202204131904" />
+  <Entry Server="KKFMKIS001" Version="2.0.8126 / 01.04. 12:00" License="e9dac02d-3297-446b-919b-22fe1453e558" Display="Kaufbeuren_Orbis" Products="MetaKIS" Key="Kaufbeuren_Orbis" LastData="202204131904" />
+  <Entry Server="KKHS059" Version="2.0.8126 / 01.04. 12:00" License="2b6cc4d3-5b18-4b7b-9375-efb995d039a1" Display="Kelheim" Products="MetaKIS" Key="Kelheim" LastData="202204131904" />
+  <Entry Server="N-15L40J3" Version="2.0.7986 / 12.11. 10:00" License="269cc14b-fe2f-982d-852f-0cef158daff0" Display="KellerCGM" Products="MetaKIS" Key="KellerCGM" LastData="202204131059" />
+  <Entry Server="K98VAPPP2D00014" Version="2.0.8126 / 01.04. 12:00" License="efd5b699-0f56-4da1-80b2-c76220f446c4" Display="KIT\ Wuerselen" Products="MetaKIS" Key="KIT\ Wuerselen" LastData="202204131904" />
+  <Entry Server="SRV-METAKIS-01" Version="2.0.8118 / 23.03. 23:00" License="ef707a95-733f-4184-b9d0-83e5ea3d3fd6" Display="Klinikum\ Bremerhaven" Products="MetaKIS" Key="Klinikum\ Bremerhaven" LastData="202204131559" />
+  <Entry Server="DKKSGNH100" Version="2.0.8124 / 30.03. 10:00" License="af530043-52cd-4963-9d6d-335c5434ec06" Display="Klinikum\ Kassel" Products="MetaTEXT" Key="Klinikum\ Kassel" LastData="202204131904" />
+  <Entry Server="DKKSGNH101" Version="2.0.8126 / 01.04. 12:00" License="af530043-52cd-4963-9d6d-335c5434ec06" Display="Klinikum\ KasselDARO" Products="MetaKIS" Key="Klinikum\ KasselDARO" LastData="202204131904" />
+  <Entry Server="DKKSGNH101" Version="2.0.8126 / 01.04. 12:00" License="af530043-52cd-4963-9d6d-335c5434ec06" Display="Klinikum\ KasselDKKS" Products="MetaKIS" Key="Klinikum\ KasselDKKS" LastData="202204131904" />
+  <Entry Server="KLAWS0092" Version="2.0.8126 / 01.04. 12:00" License="236d394f-dc39-4099-b069-18dcaa68febd" Display="Klinikum\ Landshut" Products="MetaKIS" Key="Klinikum\ Landshut" LastData="202204130359" />
+  <Entry Display="Klinikum\ Ludwigshafen" Key="Klinikum\ Ludwigshafen" />
+  <Entry Server="MAGMETATEXT" Version="2.0.8124 / 30.03. 10:00" License="693cbcd2-3ed2-dbd3-6720-4024cb4d462b" Display="Klinikum\ Madgeburg" Products="MetaTEXT" Key="Klinikum\ Madgeburg" LastData="202204131904" />
+  <Entry Server="MAGMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="693cbcd2-3ed2-dbd3-6720-4024cb4d462b" Display="Klinikum\ Magdeburg" Products="MetaKIS" Key="Klinikum\ Magdeburg" LastData="202204130459" />
+  <Entry Server="V0431" Version="2.0.8124 / 30.03. 10:00" License="831357f4-80f5-b34f-ded5-9d11d0e4ae5a" Display="klinikum\ nardini" Products="MetaKIS, MetaTEXT" Key="klinikum\ nardini" LastData="202204131904" />
+  <Entry Server="VE-METAK01-01" Version="2.0.8132 / 06.04. 23:00" License="428a2836-dd0e-45e7-a06f-202280ab647d" Display="KlinkumSaarbruecken" Products="MetaKIS" Key="KlinkumSaarbruecken" LastData="202204131904" />
+  <Entry Server="RZ1-SWV-MTEXT01" Version="2.0.8124 / 30.03. 10:00" License="2bec996c-0ef8-8011-6908-89ab6c2c439a" Display="KMG" Products="MetaKIS, MetaTEXT" Key="KMG" LastData="202204131904" />
+  <Entry Server="RZ1-SWV-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="2bec996c-0ef8-8011-6908-89ab6c2c439a" Display="KMG\ BO" Products="MetaKIS" Key="KMG\ BO" LastData="202204131904" />
+  <Entry Server="RZ1-SWV-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="2bec996c-0ef8-8011-6908-89ab6c2c439a" Display="KMG\ GU" Products="MetaKIS" Key="KMG\ GU" LastData="202204131904" />
+  <Entry Server="RZ1-SWV-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="2bec996c-0ef8-8011-6908-89ab6c2c439a" Display="KMG\ Mitte" Products="MetaKIS" Key="KMG\ Mitte" LastData="202204131904" />
+  <Entry Server="V-KOH-MTK-0001" Version="2.0.8126 / 01.04. 12:00" License="67d0c1e3-16ce-bdbc-7f94-b8a7b8206fbe" Display="Kohlhof" Products="MetaKIS" Key="Kohlhof" LastData="202204131904" />
+  <Entry Server="SGLKNMSSQ01" Version="2.0.8132 / 06.04. 23:00" License="ec2e1341-f7b3-4cf3-a543-e96c7864c911" Display="Konstanz.HBK" Products="MetaKIS" Key="Konstanz.HBK" LastData="202204131904" />
+  <Entry Server="SGLKNMSSQ01" Version="2.0.8126 / 01.04. 12:00" License="ec2e1341-f7b3-4cf3-a543-e96c7864c911" Display="Konstanz.HBK\ Gesamt" Products="MetaKIS" Key="Konstanz.HBK\ Gesamt" LastData="202204110259" />
+  <Entry Server="SGLKNMSSQ01" Version="2.0.8132 / 06.04. 23:00" License="ec2e1341-f7b3-4cf3-a543-e96c7864c911" Display="Konstanz.KN" Products="MetaKIS" Key="Konstanz.KN" LastData="202204131904" />
+  <Entry Server="SLKSRAPPMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="02f561a7-e535-4a9e-beb2-523dffb2bfb3" Display="KplusSJH" Products="MetaKIS" Key="KplusSJH" LastData="202204131904" />
+  <Entry Server="SLKSRAPPMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="02f561a7-e535-4a9e-beb2-523dffb2bfb3" Display="KplusSJK" Products="MetaKIS" Key="KplusSJK" LastData="202204131904" />
+  <Entry Server="SLKSRAPPMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="02f561a7-e535-4a9e-beb2-523dffb2bfb3" Display="KplusSLK" Products="MetaKIS" Key="KplusSLK" LastData="202204131904" />
+  <Entry Server="SLKSRAPPMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="02f561a7-e535-4a9e-beb2-523dffb2bfb3" Display="KplusSRK" Products="MetaKIS" Key="KplusSRK" LastData="202204131904" />
+  <Entry Server="HKNMETAKISTEXT" Version="2.0.8132 / 06.04. 23:00" License="ac1d583a-5314-4684-b305-480df09fdbda" Display="Krankenhaus\ Havelland" Products="MetaKIS, MetaTEXT" Key="Krankenhaus\ Havelland" LastData="202204131904" />
+  <Entry Server="RZ-METAKIS01" Version="2.0.8126 / 01.04. 12:00" License="a4ba3ce6-27ad-49f3-97ac-79ee8c3cb11b" Display="Krankenhaus\ Moers" Products="MetaKIS" Key="Krankenhaus\ Moers" LastData="202204131904" />
+  <Entry Server="V-NRH-MTK-0001" Version="2.0.8126 / 01.04. 12:00" License="e8a1a2b9-bf70-873b-a3ac-37e46406d27e" Display="Krankenhaus\ Neuwied" Products="MetaKIS" Key="Krankenhaus\ Neuwied" LastData="202204131904" />
+  <Entry Server="KLAWS0094" Version="2.0.8124 / 30.03. 10:00" License="236d394f-dc39-4099-b069-18dcaa68febd" Display="Landshut" Products="MetaTEXT" Key="Landshut" LastData="202204131904" />
+  <Entry Server="LAURATRONNIF58E" Version="2.0.7986 / 12.11. 10:00" License="4699f1b7-b0b9-47c6-9f06-0cc60da7c666" Display="Laura\ Tonnier" Products="MetaKIS" Key="Laura\ Tonnier" LastData="202204131759" />
+  <Entry Server="VEC-MEK01" Version="2.0.8126 / 01.04. 12:00" License="709643da-d00c-4f41-9fbf-f7654337cf7a" Display="Lohne" Products="MetaKIS" Key="Lohne" LastData="202204131904" />
+  <Entry Server="WKMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="e621a319-38db-f62a-ed52-d4dfd2659029" Display="LudwigsburgBI" Products="MetaKIS" Key="LudwigsburgBI" LastData="202204131904" />
+  <Entry Server="WKMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="e621a319-38db-f62a-ed52-d4dfd2659029" Display="LudwigsburgBS" Products="MetaKIS" Key="LudwigsburgBS" LastData="202204131904" />
+  <Entry Server="WKMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="e621a319-38db-f62a-ed52-d4dfd2659029" Display="LudwigsburgEKK" Products="MetaKIS" Key="LudwigsburgEKK" LastData="202204131904" />
+  <Entry Server="WKMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="e621a319-38db-f62a-ed52-d4dfd2659029" Display="LudwigsburgLB" Products="MetaKIS" Key="LudwigsburgLB" LastData="202204131904" />
+  <Entry Server="WKMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="e621a319-38db-f62a-ed52-d4dfd2659029" Display="LudwigsburgNB" Products="MetaKIS" Key="LudwigsburgNB" LastData="202204131904" />
+  <Entry Server="WKMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="e621a319-38db-f62a-ed52-d4dfd2659029" Display="LudwigsburgOM" Products="MetaKIS" Key="LudwigsburgOM" LastData="202204131904" />
+  <Entry Server="WKMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="e621a319-38db-f62a-ed52-d4dfd2659029" Display="LudwigsburgRKH" Products="MetaKIS" Key="LudwigsburgRKH" LastData="202204131904" />
+  <Entry Display="LuisenHospital\ Aachen" Key="LuisenHospital\ Aachen" />
+  <Entry Server="SRBXMETATEXT01" Version="2.0.8124 / 30.03. 10:00" License="50ccaf15-07db-43c1-a3a3-8877361d9bb8" Display="Maerkisch-Oderland" Products="MetaTEXT" Key="Maerkisch-Oderland" LastData="202204131904" />
+  <Entry Server="SV325" Version="2.0.8126 / 01.04. 12:00" License="ff996492-dd9b-440d-9dfb-fbf8f042c44d" Display="MannheimTK" Products="MetaKIS" Key="MannheimTK" LastData="202204131904" />
+  <Entry Server="V-BNA-MTK-0001" Version="2.0.8126 / 01.04. 12:00" License="a390a4e1-f497-2b81-a3fc-503034f3d74c" Display="Marienhaus\ Bad\ Neuenahr" Products="MetaKIS" Key="Marienhaus\ Bad\ Neuenahr" LastData="202204131904" />
+  <Entry Server="V-BIT-MTK-0001" Version="2.0.8126 / 01.04. 12:00" License="57017037-bd09-a0b3-e3dd-31e4617bbb11" Display="Marienhaus\ Bitburg" Products="MetaKIS" Key="Marienhaus\ Bitburg" LastData="202204131904" />
+  <Entry Server="V-HER-MTK-0001" Version="2.0.8126 / 01.04. 12:00" License="599326dc-96fe-41ae-ba1b-d6e469ed1aa8" Display="Marienhaus\ Hermeskeil" Products="MetaKIS" Key="Marienhaus\ Hermeskeil" LastData="202204131904" />
+  <Entry Server="V-KKM-MTK-0001" Version="2.0.8126 / 01.04. 12:00" License="2759a5c1-7744-12aa-4677-5f004cba786b" Display="Marienhaus\ Mainz" Products="MetaKIS" Key="Marienhaus\ Mainz" LastData="202204131905" />
+  <Entry Server="V-NEW-MTK-0001" Version="2.0.8126 / 01.04. 12:00" License="6fb1bcf6-7605-29ae-520c-b1c3b76eada5" Display="Marienhaus\ Neustadt" Products="MetaKIS" Key="Marienhaus\ Neustadt" LastData="202204131905" />
+  <Entry Server="V-SLS-MTK-0001" Version="2.0.8126 / 01.04. 12:00" License="c81a1c7a-4e43-48a3-f7ca-384d7e8faafc" Display="Marienhaus\ Saarlouis" Products="MetaKIS" Key="Marienhaus\ Saarlouis" LastData="202204131905" />
+  <Entry Server="V-SLS-MTK-0002" Version="2.0.8126 / 01.04. 12:00" License="e7e4301f-623d-adb8-1e9d-f343acf3f69d" Display="Marienhaus\ Saarlouis\ Zentrale" Products="MetaKIS" Key="Marienhaus\ Saarlouis\ Zentrale" LastData="202204120359" />
+  <Entry Server="V-WND-MTK-0001" Version="2.0.8126 / 01.04. 12:00" License="bc77a772-c19a-2d48-157d-2e589610f947" Display="Marienhaus\ Sankt\ Wendel" Products="MetaKIS" Key="Marienhaus\ Sankt\ Wendel" LastData="202204131905" />
+  <Entry Server="SRV-MEKIS-01" Version="2.0.8126 / 01.04. 12:00" License="b328b3d8-b607-4d1b-883d-9e92b7640e33" Display="Marienkrankenhaus\ Hamburg" Products="MetaKIS" Key="Marienkrankenhaus\ Hamburg" LastData="202204131905" />
+  <Entry Server="SRBXMETAKIS01" Version="2.0.8126 / 01.04. 12:00" License="50ccaf15-07db-43c1-a3a3-8877361d9bb8" Display="Märkisch-Oderland" Products="MetaKIS" Key="Märkisch-Oderland" LastData="202204131905" />
+  <Entry Server="METAKIS-DS" Version="2.0.7986 / 12.11. 10:00" License="b0d23487-8079-4a79-8527-491d7590233d" Display="MetaIT\ Speicher" Products="MetaKIS" Key="MetaIT\ Speicher" LastData="202204071359" />
+  <Entry Display="MetaITDEV" Key="MetaITDEV" />
+  <Entry Server="DEV-METAKIS-SRV" Version="2.0.8136 / 10.04. 23:00" License="ffa40405-7ef3-414a-8d9e-a1a82bc8d982" Display="MetaITDEVDEV" Products="MetaKIS" Key="MetaITDEVDEV" LastData="202204131559" />
+  <Entry Server="EUGENE-LAPTOP" Version="2.0.8120 / 26.03. 12:00" License="ffa40405-7ef3-414a-8d9e-a1a82bc8d982" Display="MetaITLocalhost" Products="MetaKIS, MetaTEXT" Key="MetaITLocalhost" LastData="202204111359" />
+  <Entry Server="SAMOILENKOPC" Version="2.0.7986 / 12.11. 10:00" License="4febebbb-3d4f-426d-b374-563f7c5b24ae" Display="MetaITVladimir" Key="MetaITVladimir" LastData="202203191759" />
+  <Entry Server="MUESRVMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="9484c814-82af-40e2-907f-fff1bc07b9be" Display="MühldorfInn" Products="MetaKIS" Key="MühldorfInn" LastData="202204131905" />
+  <Entry Server="SV0054" Version="2.0.8126 / 01.04. 12:00" License="efd5b699-0f56-4da1-80b2-c76220f446c4" Display="MZ-Aachen" Products="MetaKIS" Key="MZ-Aachen" LastData="202204131905" />
+  <Entry Server="AWV114" Version="2.0.8126 / 31.03. 23:00" License="27905f58-9cc6-4c43-a8e5-a27115f3e1a4" Display="Neubrandenburg" Products="MetaKIS, MetaTEXT" Key="Neubrandenburg" LastData="202204131905" />
+  <Entry Server="ND-KSE-SMETA" Version="2.0.8126 / 01.04. 12:00" License="8f96fdeb-54ee-4440-a467-a7612d574017" Display="Neuburg" Products="MetaKIS" Key="Neuburg" LastData="202204131905" />
+  <Entry Server="NMSMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="f1d71158-0c13-4d6c-8213-797a4bc57436" Display="Neumunster" Products="MetaKIS" Key="Neumunster" LastData="202204131905" />
+  <Entry Server="NMSMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="f1d71158-0c13-4d6c-8213-797a4bc57436" Display="NeumunsterAbt" Products="MetaKIS" Key="NeumunsterAbt" LastData="202204131905" />
+  <Entry Server="SNMETATXT" Version="2.0.8124 / 30.03. 10:00" License="9156631f-14ce-4bfd-8153-2d2ae573ce2f" Display="Neustadt" Products="MetaTEXT" Key="Neustadt" LastData="202204131905" />
+  <Entry Server="SNMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="9156631f-14ce-4bfd-8153-2d2ae573ce2f" Display="NeustadtAisch" Products="MetaKIS" Key="NeustadtAisch" LastData="202204131905" />
+  <Entry Server="SQLSERVER2" Version="2.0.8126 / 01.04. 12:00" License="928fa48b-c2be-4065-8107-0041377d97fe" Display="Neustrelitz" Products="MetaKIS" Key="Neustrelitz" LastData="202204131905" />
+  <Entry Server="STIMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="9ee732eb-8fa4-4bc6-803d-60ca70330d21" Display="Neuulm" Products="MetaKIS" Key="Neuulm" LastData="202204131905" />
+  <Entry Server="HUSMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="ee748f35-5086-4948-b14c-271f05da8ae5" Display="Nordfriesland" Products="MetaKIS" Key="Nordfriesland" LastData="202204121059" />
+  <Entry Server="MK-METAKIS-02" Version="2.0.8126 / 31.03. 23:00" License="1c50f0e4-70d9-4ee0-9776-ce2a150db9af" Display="Ochsenfurt" Products="MetaKIS, MetaTEXT" Key="Ochsenfurt" LastData="202204131905" />
+  <Entry Server="VM79D878F" Version="2.0.7986 / 12.11. 10:00" License="526b27c3-26cb-43e4-a46e-76e0dfb0a5f5" Display="OINK" Products="MetaKIS" Key="OINK" LastData="202204131859" />
+  <Entry Server="KMO-METAKIS" Version="2.0.8126 / 01.04. 12:00" License="24a9912d-0420-4364-90ce-c1094fd3f878" Display="Oldenburg" Products="MetaKIS" Key="Oldenburg" LastData="202204131905" />
+  <Entry Server="MEDICO-METATEXT" Version="2.0.8126 / 31.03. 23:00" License="0e0c8150-3f4d-4738-8e29-9d909f6d15fd" Display="Osnabrueck" Products="MetaKIS, MetaTEXT" Key="Osnabrueck" LastData="202204131905" />
+  <Entry Server="ZIT-KAPITO" Version="2.0.8126 / 01.04. 12:00" License="efba932a-4cd2-46f9-a01f-3c90b2899fa0" Display="OstalbAAL" Products="MetaKIS" Key="OstalbAAL" LastData="202204131905" />
+  <Entry Server="ZIT-KAPITO" Version="2.0.8126 / 01.04. 12:00" License="efba932a-4cd2-46f9-a01f-3c90b2899fa0" Display="OstalbELL" Products="MetaKIS" Key="OstalbELL" LastData="202204131905" />
+  <Entry Server="ZIT-KAPITO" Version="2.0.8126 / 01.04. 12:00" License="efba932a-4cd2-46f9-a01f-3c90b2899fa0" Display="OstalbMUT" Products="MetaKIS" Key="OstalbMUT" LastData="202204131905" />
+  <Entry Server="VM-APPL-82" Version="2.0.8124 / 30.03. 10:00" License="580781b2-9f01-d5c9-26fa-b5cc5d397570" Display="Paderborn" Products="MetaTEXT" Key="Paderborn" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PEKK" Products="MetaKIS" Key="Paracelsus\ PEKK" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PKAS" Products="MetaKIS" Key="Paracelsus\ PKAS" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PKB" Products="MetaKIS" Key="Paracelsus\ PKB" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PKDG" Products="MetaKIS" Key="Paracelsus\ PKDG" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PKE" Products="MetaKIS" Key="Paracelsus\ PKE" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PKHE" Products="MetaKIS" Key="Paracelsus\ PKHE" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PKHU" Products="MetaKIS" Key="Paracelsus\ PKHU" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PKL" Products="MetaKIS" Key="Paracelsus\ PKL" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PKM" Products="MetaKIS" Key="Paracelsus\ PKM" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PKR" Products="MetaKIS" Key="Paracelsus\ PKR" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PKZ" Products="MetaKIS" Key="Paracelsus\ PKZ" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ PNKH" Products="MetaKIS" Key="Paracelsus\ PNKH" LastData="202204131905" />
+  <Entry Server="PKD-W-MKIS01" Version="2.0.8126 / 01.04. 12:00" License="fb7575c1-467b-be2f-feba-34860d4950b9" Display="Paracelsus\ Zentrale" Products="MetaKIS" Key="Paracelsus\ Zentrale" LastData="202204131905" />
+  <Entry Server="KLIPASRV0270" Version="2.0.8126 / 31.03. 23:00" License="aeeb04c4-5d2b-43f8-bb8e-902f92ff5ff7" Display="Passau" Products="MetaKIS, MetaTEXT" Key="Passau" LastData="202204131905" />
+  <Entry Server="METAKIS01" Version="2.0.8126 / 01.04. 12:00" License="ed193497-1b5b-48f1-8ed3-f898adf93264" Display="Pleissental-Klinik\ Werdau" Products="MetaKIS" Key="Pleissental-Klinik\ Werdau" LastData="202204131905" />
+  <Entry Server="K98VAPPP2D00014" Version="2.0.8126 / 01.04. 12:00" License="9963a46d-8404-4fa5-afed-cf6cc3f643e7" Display="Puettlingen" Products="MetaKIS" Key="Puettlingen" LastData="202204131905" />
+  <Entry Server="MITRANSFORD5FE4" Version="2.0.8104 / 10.03. 16:00" License="f073310f-02d9-64b1-a6a0-28fc2ab0a7fc" Display="Ransford" Products="MetaKIS" Key="Ransford" LastData="202204131159" />
+  <Entry Server="K98VAPPP2D00014" Version="2.0.8126 / 01.04. 12:00" License="492f9cf1-fb85-4452-80f6-1c683c651340" Display="Recklinghausen" Products="MetaKIS" Key="Recklinghausen" LastData="202204131905" />
+  <Entry Server="RBKHSV00016" Version="2.0.8126 / 31.03. 23:00" License="7b1db1de-4bb8-471b-b4dd-9414dc9d77e5" Display="Reinbek" Products="MetaKIS, MetaTEXT" Key="Reinbek" LastData="202204131905" />
+  <Entry Server="RBKHSV00012" Version="2.0.8126 / 01.04. 12:00" License="7b1db1de-4bb8-471b-b4dd-9414dc9d77e5" Display="ReinbekIMPORTONLY" Products="MetaKIS" Key="ReinbekIMPORTONLY" LastData="202204131905" />
+  <Entry Server="RDBS302" Version="2.0.8126 / 31.03. 23:00" License="769bc8d1-c8e4-48a6-b02d-7582d4c59977" Display="Rendsburg" Products="MetaKIS, MetaTEXT" Key="Rendsburg" LastData="202204131905" />
+  <Entry Server="RMKSVW02" Version="2.0.8126 / 01.04. 12:00" License="cb082b4e-bdf0-4cea-8167-755e23fcc3d0" Display="Reutlingen" Products="MetaKIS" Key="Reutlingen" LastData="202204131905" />
+  <Entry Server="METAKIS-SRV" Version="2.0.7986 / 12.11. 10:00" License="9f13f040-38a2-4c62-9dbf-0bb02a83d558" Display="Romed\ Rosenheim\ BAB" Products="MetaKIS" Key="Romed\ Rosenheim\ BAB" LastData="202204131905" />
+  <Entry Server="METAKIS-SRV" Version="2.0.7986 / 12.11. 10:00" License="9f13f040-38a2-4c62-9dbf-0bb02a83d558" Display="Romed\ Rosenheim\ PRI" Products="MetaKIS" Key="Romed\ Rosenheim\ PRI" LastData="202204131906" />
+  <Entry Server="METAKIS-SRV" Version="2.0.8126 / 01.04. 12:00" License="9f13f040-38a2-4c62-9dbf-0bb02a83d558" Display="Romed\ Rosenheim\ ROK" Products="MetaKIS" Key="Romed\ Rosenheim\ ROK" LastData="202204131906" />
+  <Entry Server="METAKIS-SRV" Version="2.0.8126 / 01.04. 12:00" License="9f13f040-38a2-4c62-9dbf-0bb02a83d558" Display="Romed\ Rosenheim\ WAS" Products="MetaKIS" Key="Romed\ Rosenheim\ WAS" LastData="202204131906" />
+  <Entry Server="SRV-DKR-METAKIS" Version="2.0.8126 / 01.04. 12:00" License="8b37a0de-54c1-4156-b273-5b0902438e0b" Display="Rotenburg" Products="MetaKIS" Key="Rotenburg" LastData="202204131906" />
+  <Entry Server="VM79D878F" Version="2.0.8126 / 01.04. 12:00" License="4f321804-4065-49a7-325b-a603cc6494d2" Display="RZ\ Kieselbach" Products="MetaKIS" Key="RZ\ Kieselbach" LastData="202204120359" />
+  <Entry Server="VM79D878F" Version="2.0.7986 / 12.11. 10:00" License="e123a666-7931-f615-ba68-b9ad929472dc" Display="RZ\ Zins" Products="MetaKIS" Key="RZ\ Zins" LastData="202204081859" />
+  <Entry Server="ASLB-AP-IAD0045" Version="2.0.8126 / 01.04. 12:00" License="8c293367-28dc-469c-9490-3cd2ec1b6b5b" Display="Sana\ Biberach" Products="MetaKIS" Key="Sana\ Biberach" LastData="202204131906" />
+  <Entry Server="ISLC-AP-CHA0004" Version="2.0.8126 / 01.04. 12:00" License="c9508866-fa5c-4ac5-a8b9-56552ff222ae" Display="Sana\ Cham" Products="MetaKIS" Key="Sana\ Cham" LastData="202204131906" />
+  <Entry Server="ARED-AP-RED0001" Version="2.0.8132 / 06.04. 23:00" License="29f25983-882c-44d5-85a9-3abcdaa095db" Display="Sana\ Duisburg" Products="MetaKIS" Key="Sana\ Duisburg" LastData="202204131906" />
+  <Entry Server="ARED-AP-RED0002" Version="2.0.8126 / 01.04. 12:00" License="48ed8d00-f49b-459b-b87b-a6cead3e32c1" Display="Sana\ Düsseldorf" Products="MetaKIS" Key="Sana\ Düsseldorf" LastData="202204131906" />
+  <Entry Server="ARED-AP-RED0002" Version="2.0.8126 / 01.04. 12:00" License="\ 6335800d-cee9-4b75-8a0a-6261c85cc287" Display="Sana\ Hürth" Products="MetaKIS" Key="Sana\ Hürth" LastData="202204131906" />
+  <Entry Server="HERA" Version="2.0.8126 / 01.04. 12:00" License="5df642ea-90f8-4daa-b49d-a8fc3000e3dc" Display="Sana\ Klinikum\ Offenbach\ GmbH" Products="MetaKIS" Key="Sana\ Klinikum\ Offenbach\ GmbH" LastData="202204131906" />
+  <Entry Server="ARED-AP-RED0001" Version="2.0.8126 / 01.04. 12:00" License="1bc275ce-fce5-fda0-848d-5947ee113f14" Display="Sana\ Köln" Products="MetaKIS" Key="Sana\ Köln" LastData="202204131906" />
+  <Entry Server="ISKL-AP-LBC0009" Version="2.0.8126 / 01.04. 12:00" License="e3c5a945-48bd-4953-bbcc-1a01e2e3e969" Display="Sana\ Lübeck" Products="MetaKIS" Key="Sana\ Lübeck" LastData="202204131906" />
+  <Entry Server="VMS-SKP-37" Version="2.0.8126 / 01.04. 12:00" License="afafc910-07c4-47d5-828a-394ec34e037c" Display="Sana\ Posnitz" Products="MetaKIS" Key="Sana\ Posnitz" LastData="202204131906" />
+  <Entry Server="ARED-AP-RED0001" Version="2.0.8126 / 01.04. 12:00" License="914258a9-4de3-479c-876c-8f2131d00c4d" Display="Sana\ RemscheidSKR" Products="MetaKIS" Key="Sana\ RemscheidSKR" LastData="202204131906" />
+  <Entry Server="SBB-AP-BER-8123" Version="2.0.8126 / 01.04. 12:00" License="ff33a18a-ebe3-4878-bf1c-b9ae8347cab6" Display="Sana\ Ruegen" Products="MetaKIS" Key="Sana\ Ruegen" LastData="202204131906" />
+  <Entry Server="V-AP-30200-0013" Version="2.0.8126 / 01.04. 12:00" License="4986b7fd-c8cf-4614-b1ed-d810ebb00247" Display="Sana\,\ Dahme-Spreewald" Products="MetaKIS" Key="Sana\,\ Dahme-Spreewald" LastData="202204131906" />
+  <Entry Server="V-PE-30500-0036" Version="2.0.8132 / 06.04. 23:00" License="24bf29f2-3815-4517-ae35-984f75990432" Display="Sana\,\ Wismar" Products="MetaKIS" Key="Sana\,\ Wismar" LastData="202204131906" />
+  <Entry Server="V-AP-70160-0031" Version="2.0.8126 / 01.04. 12:00" License="2b7012fc-b39e-4300-943d-9dbf6db0a30f" Display="Sana_Stuttgart" Products="MetaKIS" Key="Sana_Stuttgart" LastData="202204131906" />
+  <Entry Server="V-AP-70160-0031" Version="2.0.8126 / 01.04. 12:00" License="2b7012fc-b39e-4300-943d-9dbf6db0a30f" Display="Sana_Stuttgart\ RKK" Products="MetaKIS" Key="Sana_Stuttgart\ RKK" LastData="202204131906" />
+  <Entry Server="V-AP-70160-0031" Version="2.0.8126 / 01.04. 12:00" License="2b7012fc-b39e-4300-943d-9dbf6db0a30f" Display="Sana_Stuttgart\ SHS" Products="MetaKIS" Key="Sana_Stuttgart\ SHS" LastData="202204131906" />
+  <Entry Server="VMW163" Version="2.0.8132 / 06.04. 23:00" License="e1153b37-3d67-4550-9151-5cd4d1608374" Display="SanaHameln" Products="MetaKIS" Key="SanaHameln" LastData="202204131906" />
+  <Entry Server="SKHMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="a681a22b-7e3d-4578-93df-a4d03a15093a" Display="SanaHof" Products="MetaKIS" Key="SanaHof" LastData="202204131906" />
+  <Entry Server="BNAMETAKIS" Version="2.0.8132 / 06.04. 23:00" License="0c80a84d-9698-492a-91f1-188619292e01" Display="SanaLeipzigerLand" Products="MetaKIS" Key="SanaLeipzigerLand" LastData="202204131906" />
+  <Entry Server="SBB-AP-BER-8123" Version="2.0.8126 / 01.04. 12:00" License="fe1c1e41-4cc2-4ffe-aa61-c90dda982632" Display="SanaLichtenbergEKW" Products="MetaKIS" Key="SanaLichtenbergEKW" LastData="202204130659" />
+  <Entry Server="SBB-AP-BER-8123" Version="2.0.8132 / 06.04. 23:00" License="fe1c1e41-4cc2-4ffe-aa61-c90dda982632" Display="SanaLichtenbergKHL" Products="MetaKIS" Key="SanaLichtenbergKHL" LastData="202204131906" />
+  <Entry Server="SBB-AP-BER-8123" Version="2.0.8132 / 06.04. 23:00" License="fe1c1e41-4cc2-4ffe-aa61-c90dda982632" Display="SanaLichtenbergSF" Products="MetaKIS" Key="SanaLichtenbergSF" LastData="202204131906" />
+  <Entry Server="SBB-AP-BER-8123" Version="2.0.8132 / 06.04. 23:00" License="fe1c1e41-4cc2-4ffe-aa61-c90dda982632" Display="SanaLichtenbergTP" Products="MetaKIS" Key="SanaLichtenbergTP" LastData="202204131906" />
+  <Entry Server="AREG-AP-ELM0109" Version="2.0.8126 / 01.04. 12:00" License="65af59d1-f5fa-4279-89e1-3094a0a1af46" Display="SanaRegioNord" Products="MetaKIS" Key="SanaRegioNord" LastData="202204131906" />
+  <Entry Server="V-AP-60190-0015" Version="2.0.8132 / 06.04. 23:00" License="aee9fb21-2640-4c95-9fe2-8d8aa928d329" Display="SanaRummelsberg" Products="MetaKIS" Key="SanaRummelsberg" LastData="202204131906" />
+  <Entry Server="V-AP-11500-0007" Version="2.0.7986 / 12.11. 10:00" License="589031e4-db25-42de-b267-c90cef74bbe8" Display="SanaZentrale" Products="MetaKIS" Key="SanaZentrale" LastData="202204131906" />
+  <Entry Server="NWKMETAKIS1" Version="2.0.8126 / 01.04. 12:00" License="4dba18e8-672e-4617-9afb-17506494d2b8" Display="Sanderbusch" Products="MetaKIS" Key="Sanderbusch" LastData="202204131906" />
+  <Entry Server="METAKISDEV" Version="2.0.8132 / 07.04. 10:00" License="96fe55ef-a83f-394d-2791-219e2533a76c" Display="SBMC" Products="MetaKIS" Key="SBMC" LastData="202204131906" />
+  <Entry Server="VM79D878F" Version="2.0.7986 / 12.11. 10:00" License="8c226b0a-7490-ddef-cff3-ae2708c40db0" Display="Schneider" Key="Schneider" LastData="202204061459" />
+  <Entry Server="VMKAPITO" Version="2.0.8126 / 01.04. 12:00" License="1f0b4608-8d32-4f73-b8aa-da21f3ba1ca4" Display="SchwaebischHallDiak" Products="MetaKIS" Key="SchwaebischHallDiak" LastData="202204131906" />
+  <Entry Server="DEV-METAKIS-SRV" Version="2.0.8101 / 07.03. 20:00" License="f5e467c9-cef9-13d6-974a-e623cbc0510e" Display="SDP\ DEV" Products="MetaTEXT" Key="SDP\ DEV" LastData="202204131906" />
+  <Entry Display="SDP\ Empolis" Key="SDP\ Empolis" />
+  <Entry Server="SV0085" Version="2.0.8126 / 01.04. 12:00" License="dc0ac08f-7636-40c8-ac14-f94c6240c9ee" Display="SOB" Products="MetaKIS" Key="SOB" LastData="202204131906" />
+  <Entry Server="SPATBILLOPT02" Version="2.0.8132 / 06.04. 23:00" License="6572c270-addb-408f-a388-e14f19a0a36d" Display="StGeorgLeipzig" Products="MetaKIS, MetaTEXT" Key="StGeorgLeipzig" LastData="202204131906" />
+  <Entry Server="K98VAPPP2D00014" Version="2.0.8126 / 01.04. 12:00" License="aef164ba-bbdf-4c71-9ed0-66ecbafd9a5b" Display="Sulzbach" Products="MetaKIS" Key="Sulzbach" LastData="202204131906" />
+  <Entry Server="DESKTOP-IHHJCQD" Version="2.0.7986 / 12.11. 10:00" License="bf7f7308-6827-419b-a4b5-98937eeef6f2" Display="Surface4" Key="Surface4" LastData="202203181659" />
+  <Entry Server="DEVMETAKIS" Version="2.0.8102 / 08.03. 16:00" License="9953e3dc-6df6-1ef2-1a05-9f8fe40d19a7" Display="UHB\ Amondis" Products="MetaKIS" Key="UHB\ Amondis" LastData="202204131906" />
+  <Entry Server="UKEMETAKIS001" Version="2.0.8126 / 01.04. 12:00" License="a3c49f3b-8d4a-de16-e5e0-610e63d93743" Display="Uni\ Essen" Products="MetaKIS" Key="Uni\ Essen" LastData="202204131906" />
+  <Entry Server="SRVMETAKIS01" Version="2.0.8126 / 31.03. 23:00" License="7c0c6c1d-0aa1-4d3f-97dc-e5f1e5c9d2a2" Display="Uni\ Greifswald" Products="MetaKIS, MetaTEXT" Key="Uni\ Greifswald" LastData="202204131906" />
+  <Entry Server="METAKIS" Version="2.0.8126 / 01.04. 12:00" License="84c24b6b-8f41-cc99-e20f-26efbf2d0252" Display="Uni\ Homburg" Products="MetaKIS" Key="Uni\ Homburg" LastData="202204130659" />
+  <Entry Server="METAKIS" Version="2.0.8126 / 01.04. 12:00" License="83c8d896-104b-47f1-9e8f-d9ffa0918d54" Display="UniMagdeburg" Products="MetaKIS" Key="UniMagdeburg" LastData="202204131906" />
+  <Entry Server="AS-METAKIS01" Version="2.0.8126 / 01.04. 12:00" License="f745fd80-1334-a9f8-13ba-51b5246397fc" Display="Universitätsklinikum\ Aachen" Products="MetaKIS" Key="Universitätsklinikum\ Aachen" LastData="202204120259" />
+  <Entry Server="VEC-MEK01" Version="2.0.8126 / 01.04. 12:00" License="709643da-d00c-4f41-9fbf-f7654337cf7a" Display="Vechta" Products="MetaKIS" Key="Vechta" LastData="202204131906" />
+  <Entry Server="VM-APPL-81" Version="2.0.8126 / 01.04. 12:00" License="580781b2-9f01-d5c9-26fa-b5cc5d397570" Display="Vincenz\ Paderborn" Products="MetaKIS" Key="Vincenz\ Paderborn" LastData="202204131906" />
+  <Entry Server="FHJMETATEXT" Version="2.0.8124 / 30.03. 10:00" License="a95ba833-54bf-4f5b-a971-6268e739967f" Display="Vinzenz\ Fulda" Products="MetaTEXT" Key="Vinzenz\ Fulda" LastData="202204131906" />
+  <Entry Server="FHJMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="a95ba833-54bf-4f5b-a971-6268e739967f" Display="Vinzenz\ FuldaFHJ" Products="MetaKIS" Key="Vinzenz\ FuldaFHJ" LastData="202204131906" />
+  <Entry Server="FHJMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="a95ba833-54bf-4f5b-a971-6268e739967f" Display="Vinzenz\ FuldaHSV" Products="MetaKIS" Key="Vinzenz\ FuldaHSV" LastData="202204131906" />
+  <Entry Server="FHJMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="a95ba833-54bf-4f5b-a971-6268e739967f" Display="Vinzenz\ FuldaKMK" Products="MetaKIS" Key="Vinzenz\ FuldaKMK" LastData="202204131906" />
+  <Entry Server="VKKDMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="e557d5a5-f646-89c9-bc57-8c05be3d3954" Display="VKK\ Düsseldorf\ -\ AKH" Products="MetaKIS" Key="VKK\ Düsseldorf\ -\ AKH" LastData="202204130359" />
+  <Entry Server="VKKDMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="e557d5a5-f646-89c9-bc57-8c05be3d3954" Display="VKK\ Düsseldorf\ -\ MHD" Products="MetaKIS" Key="VKK\ Düsseldorf\ -\ MHD" LastData="202204120359" />
+  <Entry Display="VKK\ Düsseldorf\ -\ MTK" Key="VKK\ Düsseldorf\ -\ MTK" />
+  <Entry Server="METAKIS-TEXT" Version="2.0.8124 / 30.03. 10:00" License="6ca9f081-975c-42c8-9c02-84970f6c508c" Display="Warendorf" Products="MetaTEXT" Key="Warendorf" LastData="202204131906" />
+  <Entry Server="STIMETAKIS" Version="2.0.8126 / 01.04. 12:00" License="9ee732eb-8fa4-4bc6-803d-60ca70330d21" Display="Weissenhorn" Products="MetaKIS" Key="Weissenhorn" LastData="202204131906" />
+  <Entry Server="WMAP057" Version="2.0.8126 / 01.04. 12:00" License="d289e1b8-9ea0-4b02-9260-5ee31afad676" Display="WerraMeissner" Products="MetaKIS" Key="WerraMeissner" LastData="202204111759" />
+  <Entry Server="METAKIS" Version="2.0.8126 / 01.04. 12:00" License="c583e431-5787-41c2-bef6-068e7561c363" Display="Wildehausen" Products="MetaKIS" Key="Wildehausen" LastData="202204131906" />
+  <Entry Server="SRV-METAKIS" Version="2.0.8126 / 01.04. 12:00" License="08e5dc5e-e245-46ac-a006-623c86cb7ed5" Display="Wittmund" Products="MetaKIS" Key="Wittmund" LastData="202204131907" />
+</Installations>

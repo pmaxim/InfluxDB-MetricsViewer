@@ -1,0 +1,11 @@
+<mat-toolbar class="mat-toolbar-details mat-elevation-z6">
+    <h2>{{sublicense}}</h2>
+</mat-toolbar>
+<div fxLayout="column" class="mat-typography" style="padding: 20px; margin-top: 44px;">
+    <ng-container *ngIf="measurements && range && array4Lines && array4Lines.length>0">
+      <div *ngFor="let item of measurements" style="margin-top: 10px;" (click)="showModal(item)">
+        <app-line-chart [measurement]="item"
+                        [array4Lines]="array4Lines"></app-line-chart>
+      </div>
+    </ng-container>
+</div>

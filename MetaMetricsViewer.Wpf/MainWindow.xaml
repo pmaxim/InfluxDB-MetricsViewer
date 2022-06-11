@@ -1,0 +1,278 @@
+﻿<Window x:Class="MetaMetricsViewer.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetaMetricsViewer.Wpf"
+        xmlns:api="clr-namespace:MetaMetrics.Api;assembly=MetaMetricsViewer.Api"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        Title="MetaMetrics-Viewer" Height="800" Width="1024" DataContext="{Binding RelativeSource={RelativeSource Self}, Path=Model }">
+<Window.Resources>
+    <local:VisibiltyConverter x:Key="visibiltyConverter"/>
+    <local:SelectMeasureDisplayConverter x:Key="selectMeasureDisplayConverter" />
+    <local:SelectMeasureTypeConverter x:Key="selectMeasureTypeConverter" />
+    <local:RowToIndexConverter x:Key="rowToIndexConverter"/>
+</Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <StackPanel Orientation="Horizontal">
+                <Button Click="AddInstallation_OnClick">Add Installation</Button>
+                <Button Margin="8,0,0,0" Click="MapOpen_OnClick">Map</Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="500"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <Button Click="ButtonBase_OnClick">Go</Button>     
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0">Filter:</TextBlock>
+                    <TextBox Text="{Binding FilterText, UpdateSourceTrigger=PropertyChanged}" MinWidth="100"></TextBox>
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0">Wert:</TextBlock>
+                    <ComboBox Margin="8,0,0,0" ItemsSource="{Binding AllMeasures}" SelectedItem="{Binding SelectedMeasure}" DisplayMemberPath="MeasurementDisplay" SelectionChanged="Selector_OnSelectionChanged"></ComboBox>
+                    <CheckBox VerticalAlignment="Center" Margin="8,0,0,0" IsChecked="{Binding FilterOnMeasure}">filtern</CheckBox>
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0">Gruppe:</TextBlock>
+                    <ComboBox Margin="8,0,0,0" ItemsSource="{Binding AllGroups}" SelectedItem="{Binding SelectedGroup}"></ComboBox>
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0">KIS:</TextBlock>
+                    <ComboBox Margin="8,0,0,0" ItemsSource="{Binding AllKIS}" SelectedItem="{Binding SelectedKIS}"></ComboBox>
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0">Interface:</TextBlock>
+                    <ComboBox Margin="8,0,0,0" ItemsSource="{Binding AllInterface}" SelectedItem="{Binding SelectedInterface}"></ComboBox>
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0">Version:</TextBlock>
+                    <ComboBox Margin="8,0,0,0" ItemsSource="{Binding AllVersion}" SelectedItem="{Binding SelectedVersion}"></ComboBox>
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0">Produkt:</TextBlock>
+                    <ComboBox Margin="8,0,0,0" ItemsSource="{Binding AllProduct}" SelectedItem="{Binding SelectedProduct}"></ComboBox>
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0">Server:</TextBlock>
+                    <ComboBox Margin="8,0,0,0" ItemsSource="{Binding AllServer}" SelectedItem="{Binding SelectedServer}"></ComboBox>
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0">Lizenz:</TextBlock>
+                    <ComboBox Margin="8,0,0,0" ItemsSource="{Binding AllLicense}" SelectedItem="{Binding SelectedLicense}"></ComboBox>
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0">Ping:</TextBlock>
+                    <ComboBox Margin="8,0,0,0" ItemsSource="{Binding AllDates}" SelectedItem="{Binding SelectedDate}"></ComboBox>
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0" Text="{Binding Count}">
+                        <ToolTipService.ToolTip>
+                            <TextBlock Text="{Binding Counters}"></TextBlock>
+                        </ToolTipService.ToolTip>
+                    </TextBlock>
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0" Text="{Binding HospitalCount}"></TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="2">
+                    <TextBlock VerticalAlignment="Center" Margin="8,0,4,0" Text="{Binding CurrentAction}"></TextBlock>
+                </StackPanel>
+            <DataGrid AlternatingRowBackground="#f8f8f8" FrozenColumnCount="2" EnableColumnVirtualization="True" x:Name="InstallationsGrid" EnableRowVirtualization="true" Grid.Row="1" SelectionMode="Single" AutoGenerateColumns="false" ItemsSource="{Binding FilteredInstallations}" IsReadOnly="True" MouseDoubleClick="Control_OnMouseDoubleClick" SelectedItem="{Binding SelectedInstallation}" Sorting="InstallationsGrid_OnSorting">
+                <DataGrid.RowStyle>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True" >
+                                <Setter Property="Background" Value="Beige" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.CellStyle>
+                    <Style TargetType="{x:Type DataGridCell}">
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True" >
+                                <Setter Property="Background" Value="Beige" />
+                                <Setter Property="Foreground" Value="Black" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.CellStyle>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Visibility="Collapsed" Header="#" Binding="{Binding RelativeSource={RelativeSource AncestorType=DataGridRow}, Converter={StaticResource rowToIndexConverter}}" />
+                    <DataGridTemplateColumn Width="200" Header="Name" ClipboardContentBinding="{Binding Name}" SortMemberPath="Name">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Margin="4,0,4,0" Text="{Binding Path=Item.Name, RelativeSource={RelativeSource AncestorType=DataGridRow} }" />
+                                    <TextBlock Margin="4,0,4,0" Text="{Binding Path=Item.HospitalName, RelativeSource={RelativeSource AncestorType=DataGridRow} }" FontStyle="Italic" Foreground="DarkGray"></TextBlock>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Margin="4,0,4,0" Text="{Binding Path=Item.IK, RelativeSource={RelativeSource AncestorType=DataGridRow} }" FontStyle="Italic" Foreground="DarkGray"></TextBlock>
+                                        <TextBlock Margin="4,0,4,0" Text="{Binding Path=Item.ProjectID, RelativeSource={RelativeSource AncestorType=DataGridRow} }" FontStyle="Italic" Foreground="DarkGray"></TextBlock>
+                                    </StackPanel>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                   </DataGridTemplateColumn>
+                   <DataGridTextColumn Visibility="Collapsed" Header="von" Binding="{Binding FirstTime, StringFormat=dd.MM. HH:mm}">
+                   </DataGridTextColumn>
+                   <DataGridTextColumn Header="bis" Binding="{Binding LastData, StringFormat=dd.MM. HH:mm}">
+                   </DataGridTextColumn>
+                   <DataGridTemplateColumn Header="Call" Width="150" SortMemberPath=".[metakis__webcontext].Avg">
+                       <DataGridTemplateColumn.CellTemplate>
+                           <DataTemplate>
+                               <local:MetaMetricsSparkLine DataItem="{Binding Path=Item, RelativeSource={RelativeSource AncestorType=DataGridRow} }" MeasurementType="metakis__webcontext"></local:MetaMetricsSparkLine>
+                           </DataTemplate>
+                       </DataGridTemplateColumn.CellTemplate>
+                   </DataGridTemplateColumn>
+                   <DataGridTemplateColumn Header="RestImport" Width="150"  SortMemberPath=".[metakis__workcontextrecords].Avg">
+                       <DataGridTemplateColumn.CellTemplate>
+                           <DataTemplate>
+                               <local:MetaMetricsSparkLine DataItem="{Binding Path=Item, RelativeSource={RelativeSource AncestorType=DataGridRow} }" MeasurementType="metakis__workcontextrecords"></local:MetaMetricsSparkLine>
+                           </DataTemplate>
+                       </DataGridTemplateColumn.CellTemplate>
+                   </DataGridTemplateColumn>
+                   <DataGridTemplateColumn Header="DataImport"  Width="150" SortMemberPath=".[metakis__patientdata].Avg">
+                       <DataGridTemplateColumn.CellTemplate>
+                           <DataTemplate>
+                               <local:MetaMetricsSparkLine DataItem="{Binding Path=Item, RelativeSource={RelativeSource AncestorType=DataGridRow} }" MeasurementType="metakis__patientdata"></local:MetaMetricsSparkLine>
+                           </DataTemplate>
+                       </DataGridTemplateColumn.CellTemplate>
+                   </DataGridTemplateColumn>
+                   <DataGridTemplateColumn Header="Parse"  Width="150" SortMemberPath=".[metatext__parsedocument_counter].Avg">
+                       <DataGridTemplateColumn.CellTemplate>
+                           <DataTemplate>
+                               <local:MetaMetricsSparkLine DataItem="{Binding Path=Item, RelativeSource={RelativeSource AncestorType=DataGridRow} }" MeasurementType="metatext__parsedocument_counter"></local:MetaMetricsSparkLine>
+                           </DataTemplate>
+                       </DataGridTemplateColumn.CellTemplate>
+                   </DataGridTemplateColumn>
+                   <DataGridTemplateColumn Header="Analyse"  Width="150" SortMemberPath=".[metatext__analyzedocument_counter].Avg">
+                       <DataGridTemplateColumn.CellTemplate>
+                           <DataTemplate>
+                               <local:MetaMetricsSparkLine DataItem="{Binding Path=Item, RelativeSource={RelativeSource AncestorType=DataGridRow} }" MeasurementType="metatext__analyzedocument_counter"></local:MetaMetricsSparkLine>
+                           </DataTemplate>
+                       </DataGridTemplateColumn.CellTemplate>
+                   </DataGridTemplateColumn>      
+                    <DataGridTemplateColumn Header="{Binding SelectedMeasure, Converter={StaticResource selectMeasureDisplayConverter}}"  SortMemberPath="{Binding SortPathFreeColumn}" Width="150" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <local:MetaMetricsSparkLine x:Name="LastColumnSparkline" DataItem="{Binding Path=Item, RelativeSource={RelativeSource AncestorType=DataGridRow} }" MeasurementType="{Binding DataContext.SelectedMeasure, RelativeSource={RelativeSource AncestorType=Window}, Converter={StaticResource selectMeasureTypeConverter}}"></local:MetaMetricsSparkLine>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    
+                    <DataGridTextColumn Visibility="Visible" Header="Server" Binding="{Binding Server}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="Version" Binding="{Binding Version}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="License" Binding="{Binding License}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="KIS" Binding="{Binding KIS}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="Int" Binding="{Binding Interface}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="Prod" Binding="{Binding Products}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="Prj" Binding="{Binding ProjectID}" SortMemberPath="ProjectIDInt">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="IK" Binding="{Binding IK}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="St" Binding="{Binding Standort}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="H.Sitz" Binding="{Binding HospitalSitz}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="H.Träger" Binding="{Binding HospitalTraeger}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="H.Ort" Binding="{Binding HospitalOrt}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="H.Plz" Binding="{Binding HospitalPlz}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="H.Str" Binding="{Binding HospitalStrasse}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="H.Lat" Binding="{Binding HospitalLatitude}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Visibility="Visible" Header="H.Lon" Binding="{Binding HospitalLongitude}">
+                    </DataGridTextColumn>
+              
+               </DataGrid.Columns>
+            </DataGrid>
+                
+            </Grid>
+            <Grid Margin="5,0,0,0" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="4,0,4,0" VerticalAlignment="Center">Stundeninterval</TextBlock>
+                    <ComboBox Visibility="Visible" SelectedValuePath="Tag" SelectedValue="{Binding EachHourString}">
+                        <ComboBox.Items>
+                            <ComboBoxItem Content="1h" Tag="1" />
+                            <ComboBoxItem Content="2h" Tag="2" />
+                            <ComboBoxItem Content="3h" Tag="3" />
+                            <ComboBoxItem Content="4h" Tag="4" />
+                            <ComboBoxItem Content="6h" Tag="6" />
+                            <ComboBoxItem Content="8h" Tag="8" />
+                            <ComboBoxItem Content="12h" Tag="12" />
+                            <ComboBoxItem Content="24h" Tag="24" />
+                        </ComboBox.Items>
+                    </ComboBox>
+                    <TextBlock Margin="8,0,4,0" VerticalAlignment="Center">Zeitraum</TextBlock>
+                    <ComboBox Visibility="Visible" ItemsSource="{Binding RangePossibilities}" DisplayMemberPath="Display" SelectedValue="{Binding SelectedRange}">
+                    </ComboBox>
+                </StackPanel>
+                <DataGrid Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding Measures}" MouseDoubleClick="Details_OnMouseDoubleClick" SelectedItem="{Binding SelectedMeasures}">
+                <DataGrid.RowStyle>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True" >
+                                <Setter Property="Background" Value="Beige" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.CellStyle>
+                    <Style TargetType="{x:Type DataGridCell}">
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True" >
+                                <Setter Property="Background" Value="Beige" />
+                                <Setter Property="Foreground" Value="Black" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.CellStyle>
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Name" Width="300" SortMemberPath="MeasurementName" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock HorizontalAlignment="Stretch" TextAlignment="Center" Background="Beige" Grid.Row="0" Text="{Binding DataContext.MeasurementDisplay, RelativeSource={RelativeSource AncestorType=DataGridRow}}">
+                                        <ToolTipService.ToolTip>
+                                            <StackPanel>
+                                                <TextBlock Text="{Binding DataContext.MeasurementName, RelativeSource={RelativeSource AncestorType=DataGridRow}}"></TextBlock>
+                                                <TextBlock Text="{Binding DataContext.MeasurementDescription, RelativeSource={RelativeSource AncestorType=DataGridRow}}"></TextBlock>
+                                            </StackPanel>
+                                        </ToolTipService.ToolTip>
+                                    </TextBlock>
+                                    <local:MetaMetricsSparkLine Grid.Row="1" HoursIntervall="{Binding DataContext.EachHours, RelativeSource={RelativeSource AncestorType=Window}}" DataItem="{Binding Path=Item, RelativeSource={RelativeSource AncestorType=DataGridRow} }" ></local:MetaMetricsSparkLine>
+                                </Grid>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn> 
+                    <DataGridTextColumn Visibility="Collapsed" Header="von" Binding="{Binding FirstTime, StringFormat=dd.MM. HH:mm}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="bis" Binding="{Binding LastTillTime, StringFormat=dd.MM. HH:mm}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Avg" Binding="{Binding Avg, StringFormat=N1}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Max" Binding="{Binding Max, StringFormat=N0}">
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Sum" Binding="{Binding Sum, StringFormat=N0}">
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            </Grid>
+            <GridSplitter Width="5" Background="LightGray" Grid.Column="1" HorizontalAlignment="Left"/>
+        </Grid>
+        <TextBox IsReadOnly="True" BorderThickness="0" Grid.Row="1" Text="{Binding LastError}"></TextBox>
+        <Border Background="Silver" Opacity="0.5" Grid.Row="0" Grid.RowSpan="3" Visibility="{Binding InQuery, Converter={StaticResource visibiltyConverter}}">
+        </Border>
+    </Grid>
+</Window>

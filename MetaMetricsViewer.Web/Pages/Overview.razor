@@ -1,0 +1,470 @@
+﻿@page "/overview"
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Spinner
+@using Syncfusion.Blazor.Cards
+@using Syncfusion.Blazor.Lists
+@using Syncfusion.Blazor.Inputs
+@using MetaMetrics.Api
+@using System.Threading
+@inject MetaMetricsQueryService queryService
+<div style="">
+    <div style="height: 50px">
+        <SfTextBox Placeholder="Filter" @bind-Value="@FilterText"></SfTextBox>
+    </div>
+                <SfGrid DataSource="FilteredInstallations" EnableHeaderFocus="true" AllowSelection="true" AllowSorting="true" Width="100%" Height="100%">
+                    <GridTemplates>
+                        <DetailTemplate>
+                                @{ 
+                                    var installation = (context as MetaMetricsInstallationTimeLine);
+                                    <div style="display: flex; flex-wrap: wrap">
+                                            @foreach (var mcontext in installation.TimeValues)
+                                            { 
+                                                <div style="width: 300px;">
+                                                    <MetaMetricsDiagram Measurement="mcontext" Title="@mcontext.MeasurementName"/>
+                                                </div>
+                                            }
+                                </div>
+                                }
+                        </DetailTemplate>
+                    </GridTemplates>
+                    <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Menu"></GridFilterSettings>
+                    <GridSelectionSettings CheckboxOnly="true" PersistSelection="true" Type="SelectionType.Multiple"></GridSelectionSettings>
+                    <GridColumns>
+                        <GridColumn Type="ColumnType.CheckBox" AllowFiltering="false" AllowSorting="false" Width="60"></GridColumn>
+                        <GridColumn Field="Installation.Key" HeaderText="Key" Visible="false" IsPrimaryKey="true" Width="130"></GridColumn>
+                        <GridColumn Field="Installation.Fullname" HeaderText="Installation" Visible="true" Width="130"></GridColumn>
+                        <GridColumn Field="LastTillTime" HeaderText="bis" Visible="true" Width="120" Format="dd.MM. HH:mm">
+                            <Template>
+                                @{
+                                    var installation = (context as MetaMetricsInstallationTimeLine);
+                                    if (installation.LastTillTime == installation.Query.RealEndTime)
+                                    {
+                                        <div class="title-temp1 normal">
+                                            <span class="font" style="font-size: 10px">@installation.LastTillTime.ToString("dd.MM. HH:mm")</span>
+                                        </div>
+                                    }
+                                    else if (installation.LastTillTime.Date == DateTime.Today)
+                                    {
+                                        <div class="title-temp1 low">
+                                            <span class="font" style="font-size: 10px">@installation.LastTillTime.ToString("dd.MM. HH:mm")</span>
+                                        </div>
+                                    }
+                                    else if (installation.LastTillTime.Date >= DateTime.Today.AddDays(-2))
+                                    {
+                                        <div class="title-temp1 high">
+                                            <span class="font" style="font-size: 10px">@installation.LastTillTime.ToString("dd.MM. HH:mm")</span>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="title-temp1 critical">
+                                            <span class="font" style="font-size: 10px">@installation.LastTillTime.ToString("dd.MM. HH:mm")</span>
+                                        </div>
+                                    }
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn HeaderText="Call">
+                            <Template>
+                                @{
+                                    var installation = (context as MetaMetricsInstallationTimeLine);
+                                    <MetaMetricsDiagram Installation="@installation" MeasurementType="MetaMetricsMeasurementType.metakis__webcontext"/>
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn HeaderText="Work">
+                            <Template>
+                                @{
+                                    var installation = (context as MetaMetricsInstallationTimeLine);
+                                    <MetaMetricsDiagram Installation="@installation" MeasurementType="MetaMetricsMeasurementType.metakis__workcontext"/>
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn HeaderText="Data">
+                            <Template>
+                                @{
+                                    var installation = (context as MetaMetricsInstallationTimeLine);
+                                    <MetaMetricsDiagram Installation="@installation" MeasurementType="MetaMetricsMeasurementType.metakis__patientdata"/>
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn HeaderText="Parse">
+                            <Template>
+                                @{
+                                    var installation = (context as MetaMetricsInstallationTimeLine);
+                                    <MetaMetricsDiagram Installation="@installation" MeasurementType="MetaMetricsMeasurementType.metatext__parsedocument_counter"/>
+                                }
+                            </Template>
+                        </GridColumn>
+                        <GridColumn HeaderText="Analyse">
+                            <Template>
+                                @{
+                                    var installation = (context as MetaMetricsInstallationTimeLine);
+                                    <MetaMetricsDiagram Installation="@installation" MeasurementType="MetaMetricsMeasurementType.metatext__analyzedocument_counter"/>
+                                }
+                            </Template>
+                        </GridColumn>
+                    </GridColumns>
+                </SfGrid>
+        <SfSpinner @ref="@SpinnerObj" Label="Laden ..." Type="SpinnerType.Bootstrap4" Visible="true"></SfSpinner>
+</div>
+
+
+@code {
+    SfSpinner SpinnerObj;
+    public List<MetaMetricsInstallationTimeLine> _installations { get; set; } 
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (SpinnerObj != null)
+        {
+            await SpinnerObj.ShowAsync();
+        }
+        var query = new MetaMetricsQuery()
+        .OffsetHours(0)
+        .FromLastDays(DaysBack)
+        .To()
+        .Each(EachHours)
+    //.Measurement(MetaMetricsQueryExtension.AllCounters())
+        .OnValue();
+        Installations = await queryService.GetMetrics(query);
+        if (SpinnerObj != null)
+        {
+            await SpinnerObj.HideAsync();
+        }
+    }
+
+    private int _eachHours = 24;
+    public int EachHours
+    {
+        set
+        {
+            if (_eachHours == value)
+                return;
+            _eachHours = value;
+        }
+        get => _eachHours;
+    }
+    
+    private int _hourInterval = 4;
+    public int HourInterval
+    {
+        set
+        {
+            if (_hourInterval == value)
+                return;
+            _hourInterval = value;
+        }
+        get => _hourInterval;
+    }
+
+        public MetaMetricsRangeInfo[] RangePossibilities { set; get; } = new[]
+        {
+            new MetaMetricsRangeInfo() { Display ="Today", Days  = 0},
+            new MetaMetricsRangeInfo() { Display ="Yesterday", Days  = 1},
+            new MetaMetricsRangeInfo() { Display ="2d", Days  = 2},
+            new MetaMetricsRangeInfo() { Display ="3d", Days  = 3},
+            new MetaMetricsRangeInfo() { Display ="4d", Days  = 4},
+            new MetaMetricsRangeInfo() { Display ="1w", Weeks  = 1, Default = true},
+            new MetaMetricsRangeInfo() { Display ="2w", Weeks  = 2},
+            new MetaMetricsRangeInfo() { Display ="4w", Weeks  = 4},
+            new MetaMetricsRangeInfo() { Display ="1m", Monthes  = 1},
+            new MetaMetricsRangeInfo() { Display ="2m", Monthes  = 2},
+            new MetaMetricsRangeInfo() { Display ="3m", Monthes  = 3},
+            new MetaMetricsRangeInfo() { Display ="4m", Monthes  = 4},
+            new MetaMetricsRangeInfo() { Display ="6m", Monthes  = 6},
+            new MetaMetricsRangeInfo() { Display ="1y", Years  = 1},
+            new MetaMetricsRangeInfo() { Display ="Current week", CurrentWeek = true},
+            new MetaMetricsRangeInfo() { Display ="Current month", CurrentMonth = true},
+            new MetaMetricsRangeInfo() { Display ="Current quarter", CurrentQuarter = true},
+            new MetaMetricsRangeInfo() { Display ="Current year", CurrentYear = true},
+            new MetaMetricsRangeInfo() { Display ="Last week", LastWeek = true},
+            new MetaMetricsRangeInfo() { Display ="Last month", LastMonth = true},
+            new MetaMetricsRangeInfo() { Display ="Last quarter", LastQuarter = true},
+            new MetaMetricsRangeInfo() { Display ="Last year", LastYear = true},
+        };
+
+        private MetaMetricsRangeInfo _selectedRange;
+        public MetaMetricsRangeInfo SelectedRange
+        {
+            set
+            {
+                if (ReferenceEquals(_selectedRange, value))
+                    return;
+                _selectedRange = value;
+            }
+            get => _selectedRange??(_selectedRange = RangePossibilities.FirstOrDefault(s=>s.Default)??RangePossibilities.FirstOrDefault());
+        }
+
+    MetaMetricsMeasureInfo[] _allMeasures;
+    public MetaMetricsMeasureInfo[] AllMeasures
+    {
+        get => _allMeasures??Array.Empty<MetaMetricsMeasureInfo>();
+        set
+        {
+            if (ReferenceEquals(_allMeasures,value))
+                return;
+            _allMeasures = value;
+        }
+    }
+
+    private List<MetaMetricsMeasurementGroup> _measures;
+    public List<MetaMetricsMeasurementGroup> Measures
+    {
+        set
+        {
+            if (ReferenceEquals(_measures, value))
+                return;
+            _measures = value;
+            if (_measures != null)
+            {
+
+            }
+        }
+        get => _measures ?? (_measures = new List<MetaMetricsMeasurementGroup>());
+    }
+    
+    public List<MetaMetricsInstallationTimeLine> Installations
+    {
+        set
+        {
+            _installations = value;
+            if (_installations != null)
+            {
+                AllMeasures = _installations.SelectMany(n => n.TimeValues.Select(t => t.MeasurementName)).GroupBy(n => n).Select(n =>new MetaMetricsMeasureInfo(n.Key)).OrderBy(n=>n.MeasurementType==MetaMetricsMeasurementType.Unknown).ThenBy(n=>n.MeasurementType).ThenBy(n=>n.MeasurementName).ToArray();
+            }
+            RunFilter();
+        }
+        get
+        {
+            return _installations ?? (_installations = new List<MetaMetricsInstallationTimeLine>());
+        }
+    }
+    
+    private int _daysBack = 6;
+    public int DaysBack
+    {
+        set
+        {
+            if (_daysBack == value)
+                return;
+            _daysBack = value;
+        }
+        get => _daysBack;
+    }
+    
+    private List<MetaMetricsInstallationTimeLine> _filteredInstallations;
+    private bool _inQuery;
+
+    public List<MetaMetricsInstallationTimeLine> FilteredInstallations
+    {
+        set
+        {
+            /*if (ReferenceEquals(_filteredInstallations, value) )
+                return;*/
+            if (value != _filteredInstallations)
+            {
+                _filteredInstallations = value;
+                InvokeAsync(() =>
+                {
+                    StateHasChanged();
+                    Console.WriteLine($"StateHasChanged");
+                });
+            }
+        }
+        get
+        {
+            return _filteredInstallations ?? (_filteredInstallations = new List<MetaMetricsInstallationTimeLine>());
+        }
+    }
+    
+    public bool InQuery
+    {
+        get => _inQuery;
+        set
+        {
+            if (_inQuery == value)
+                return;
+            _inQuery = value;
+        }
+    }
+    
+    private string _filterText;
+    public string FilterText
+    {
+        get
+        {
+            return _filterText??"";
+        }
+        set
+        {
+            if (_filterText == value)
+                return;
+            _filterText = value;
+            RunFilter();
+        }
+    }
+
+    private Func<List<MetaMetricsInstallationTimeLine>, List<MetaMetricsInstallationTimeLine>> _sorter = (s) => s;
+
+    public Func<List<MetaMetricsInstallationTimeLine>, List<MetaMetricsInstallationTimeLine>> Sorter
+    {
+        set
+        {
+            if (ReferenceEquals(_sorter, value))
+                return;
+            _sorter = value;
+            RunFilter();
+        }
+        get => _sorter;
+    }
+    
+    
+    private int filtercounter = 0;
+    void RunFilter()
+    {
+        var version = Interlocked.Increment(ref filtercounter);
+        if (!string.IsNullOrEmpty(FilterText))
+        {
+            var f = FilterText;
+            var fi = f.ToLowerInvariant().Trim().Split(new []{' '}, StringSplitOptions.RemoveEmptyEntries);
+            Task.Run(() =>
+            {
+                Console.WriteLine($"Filter on {f}");
+                var filtered = Installations.Where(n=>n.Name.ToLowerInvariant().Contains(fi)).ToList();
+                if (version == filtercounter)
+                {
+                    InvokeAsync(() =>
+                    {
+                        FilteredInstallations = Sorter(filtered);
+                        Console.WriteLine($"Display on {f}");
+                    });
+                }
+            });
+        }
+        else
+        {
+            Task.Run(() =>
+            {
+                if (version == filtercounter)
+                {
+                    var filtered = Installations.ToList();
+                    Console.WriteLine($"Filter on empty");
+                    InvokeAsync(() =>
+                    {
+                        Console.WriteLine($"sorting on empty");
+                        FilteredInstallations = Sorter(filtered);
+                        Console.WriteLine($"Display on empty");
+                    });
+                }
+            });
+        }
+    }
+    
+    public class MetaMetricsRangeInfo
+    {
+        public string Display { set; get; }
+        public int Days { set; get; }
+        public int Weeks { set; get; }
+        public int Monthes { set; get; }
+        public int Years { set; get; }
+        public bool Default { set; get; }
+        public bool CurrentWeek { set; get; }
+        public bool LastWeek { set; get; }
+        public bool CurrentMonth { set; get; }
+        public bool LastMonth { set; get; }
+        public bool CurrentQuarter { set; get; }
+        public bool LastQuarter { set; get; }
+        public bool CurrentYear { set; get; }
+        public bool LastYear { set; get; }
+
+        public DateTime StartDate()
+        {
+            var basedate = DateTime.Today;
+            if (Days > 0)
+                basedate = basedate.AddDays(-Days);
+            else if (Weeks > 0)
+                basedate = basedate.AddDays(-Weeks*7);
+            else if (Monthes > 0)
+                basedate = basedate.AddMonths(-Monthes);
+            else if (Years > 0)
+                basedate = basedate.AddYears(-Years);
+            else if (CurrentWeek)
+                basedate = basedate.AddDays(-((int)basedate.DayOfWeek==0?6:((int)basedate.DayOfWeek-1)));
+            else if (CurrentMonth)
+                basedate = new DateTime(basedate.Year, basedate.Month, 1);
+            else if (CurrentQuarter)
+                basedate = new DateTime(basedate.Year, ((basedate.Month-1)/3)*3+1, 1);
+            else if (CurrentYear)
+                basedate = new DateTime(basedate.Year, 1, 1); 
+            else if (LastWeek)
+            {
+                basedate = basedate.AddDays(-7);
+                basedate = basedate.AddDays(-((int)basedate.DayOfWeek==0?6:((int)basedate.DayOfWeek-1)));
+            } 
+            else if (LastMonth)
+            {
+                basedate = basedate.AddMonths(-1);
+                basedate = new DateTime(basedate.Year, basedate.Month, 1);
+            } 
+            else if (LastQuarter)
+            {
+                basedate = basedate.AddMonths(-3);
+                basedate = new DateTime(basedate.Year, ((basedate.Month-1)/3)*3+1, 1);
+            }
+            else if (LastYear)
+            {
+                basedate = basedate.AddYears(-1);
+                basedate = new DateTime(basedate.Year, 1, 1);
+            }
+
+            return basedate;
+        }
+    }
+
+
+    public class MetaMetricsMeasureInfo
+    {
+        public string MeasurementName { set; get; }
+        public string MeasurementDisplay { set; get; }
+        public MetaMetricsMeasurementType MeasurementType { set; get; }
+
+        public MetaMetricsMeasureInfo(string measurementName)
+        {
+            MeasurementName = measurementName;
+            MeasurementDisplay = measurementName;
+            MeasurementType = measurementName.ToEnum(MetaMetricsMeasurementType.Unknown);
+            if (MeasurementType != MetaMetricsMeasurementType.Unknown)
+            {
+                if (MeasurementType.GetEnumAttribute<MetaMetricsUsageAttribute, MetaMetricsMeasurementType>().Any())
+                    IsUsage = true;
+                if (MeasurementType.GetEnumAttribute<MetaMetricsImportAttribute, MetaMetricsMeasurementType>().Any())
+                    IsImport = true;
+                if (MeasurementType.GetEnumAttribute<MetaMetricsCounterAttribute, MetaMetricsMeasurementType>().Any())
+                    IsCounter = true;
+                if (MeasurementType.GetEnumAttribute<MetaMetricsItemAttribute, MetaMetricsMeasurementType>().Any())
+                    IsItem = true;
+                if (MeasurementType.GetEnumAttribute<MetaMetricsMetaKISAttribute, MetaMetricsMeasurementType>().Any())
+                    IsMetaKIS = true;
+                if (MeasurementType.GetEnumAttribute<MetaMetricsMetaTEXTAttribute, MetaMetricsMeasurementType>().Any())
+                    IsMetaTEXT = true;
+                MeasurementDisplay = MeasurementType.GetEnumAttribute<MetaMetricsTitleAttribute, MetaMetricsMeasurementType>()?.FirstOrDefault()?.Title ?? MeasurementDisplay;
+            }
+        }
+
+        public bool IsMetaTEXT { get; set; }
+
+        public bool IsMetaKIS { get; set; }
+
+        public bool IsCounter { get; set; }
+
+        public bool IsItem { get; set; }
+
+        public bool IsImport { get; set; }
+
+        public bool IsUsage { get; set; }
+    }
+
+   
+
+}

@@ -1,0 +1,165 @@
+<a routerLink="/meta-metrics-viewer" routerLinkActive="active">Back</a>
+
+<div class="container">
+  <form>
+    <div class="row">
+      <div class="col-3">
+        <label for="subLicenses" class="form-label">SubLicenses</label>
+        <select [(ngModel)]="sublicense" id="subLicenses"
+                name="subLicenses"
+                (change)="changeFilter('sublicense')"
+                class="form-select">
+          <option value="">All</option>
+          <option *ngFor="let p of modelFilters.subLicenses" [value]="p">
+            {{p}}
+          </option>
+        </select>
+      </div>
+      <div class="col-3">
+        <label for="apps" class="form-label">Product</label>
+        <select [(ngModel)]="app" id="apps"
+                name="subLicenses"
+                (change)="changeFilter('app')"
+                class="form-select">
+          <option value="">All</option>
+          <option *ngFor="let p of modelFilters.apps" [value]="p">
+            {{p}}
+          </option>
+        </select>
+      </div>
+      <div class="col-3">
+        <label for="environment" class="form-label">Environments</label>
+        <select [(ngModel)]="environment" id="environment"
+                name="environment"
+                (change)="changeFilter('environment')"
+                class="form-select">
+          <option value="">All</option>
+          <option *ngFor="let p of modelFilters.environments" [value]="p">
+            {{p}}
+          </option>
+        </select>
+      </div>
+      <div class="col-3">
+        <label for="project" class="form-label">Projects</label>
+        <select [(ngModel)]="project" id="project"
+                name="project"
+                (change)="changeFilter('project')"
+                class="form-select">
+          <option value="">All</option>
+          <option *ngFor="let p of modelFilters.projects" [value]="p">
+            {{p}}
+          </option>
+        </select>
+      </div>
+      <div class="col-3">
+        <label for="version" class="form-label">Versions</label>
+        <select [(ngModel)]="version" id="version"
+                name="version"
+                (change)="changeFilter('version')"
+                class="form-select">
+          <option value="">All</option>
+          <option *ngFor="let p of modelFilters.versions" [value]="p">
+            {{p}}
+          </option>
+        </select>
+      </div>
+      <div class="col-3">
+        <label for="license" class="form-label">Licenses</label>
+        <select [(ngModel)]="license" id="license"
+                name="license"
+                (change)="changeFilter('license')"
+                class="form-select">
+          <option value="">All</option>
+          <option *ngFor="let p of modelFilters.licenses" [value]="p">
+            {{p}}
+          </option>
+        </select>
+      </div>
+      <div class="col-3">
+        <label for="server" class="form-label">Servers</label>
+        <select [(ngModel)]="server" id="server"
+                name="server1"
+                (change)="changeFilter('server')"
+                class="form-select">
+          <option value="">All</option>
+          <option *ngFor="let p of modelFilters.servers" [value]="p">
+            {{p}}
+          </option>
+        </select>
+      </div>
+      <div class="col-3">
+        <label for="range" class="form-label">Time</label>
+        <select [(ngModel)]="range" id="range"
+                name="server"
+                (change)="changeFilter('range')"
+                class="form-select">
+          <option *ngFor="let p of ranges" [value]="p.display">
+            {{p.display}}
+          </option>
+        </select>
+      </div>
+    </div>
+  </form>
+
+  <mat-paginator (page)="handlePageEvent($event)"
+                 [length]="model.count"
+                 [pageSize]="req.pageSize"
+                 [pageSizeOptions]="[10, 50, 100]"
+                 [showFirstLastButtons]="showFirstLastButtons"
+                 aria-label="Select page">
+  </mat-paginator>
+
+  <table class="mt-4 table table-striped">
+    <thead>
+      <tr>
+        <th class="c-p" (click)="sortTable('name')">Name</th>
+        <th class="c-p" (click)="sortTable('time')">bis</th>
+        <th class="c-p" (click)="sortTable('server')">Server</th>
+        <th class="c-p" (click)="sortTable('version')">Version</th>
+        <th class="c-p" (click)="sortTable('product')">Product</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="c-p" *ngFor="let p of model.list" (click)="selectTable(p)">
+        <td>{{p.name}}</td>
+        <td>{{p._time}}</td>
+        <td>{{p.server}}</td>
+        <td>{{p.version}}</td>
+        <td>{{p.app}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div *ngIf="tableLoader" class="spinner">
+  <div class="spinner-border" role="status" style="top: 50%; right: 50%;">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+
+
+<div class="offcanvas offcanvas-end bg-light" tabindex="-1"
+     id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header bg-primary">
+    <h3 id="offcanvasRightLabel">{{panel.sublicense}}</h3>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+    <div *ngFor="let p of panel.timeLines; let i = index">
+      {{p.measurement}}
+      <canvas baseChart
+              [datasets]="lineChartData[i]"
+              [options]="lineChartOptions"
+              [legend]="lineChartLegend"
+              [colors]="lineChartColors"
+              chartType="line">
+      </canvas>
+    </div>
+    <div  *ngIf="panel.timeLines.length==0" style="margin-left: 45%; margin-top: 45%;">
+      <app-spinner></app-spinner>
+    </div>
+  </div>
+</div>

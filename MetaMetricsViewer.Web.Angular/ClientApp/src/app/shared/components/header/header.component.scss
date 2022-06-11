@@ -1,0 +1,20 @@
+.logo {
+    display: block;
+    fill: #fff;
+    color: #fff;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.mat-toolbar {
+    font: unset;
+    background: #33456b;
+    color: #fff;
+
+    &.mat-toolbar-fixed {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 999;
+    }
+}

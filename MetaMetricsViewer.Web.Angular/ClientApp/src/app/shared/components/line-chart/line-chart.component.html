@@ -1,0 +1,9 @@
+<div *ngIf="lineChartData.length>0">
+  <canvas baseChart
+          [datasets]="lineChartData"
+          [options]="lineChartOptions"
+          [legend]="lineChartLegend"
+          [colors]="lineChartColors"
+          chartType="line">
+  </canvas>
+</div>

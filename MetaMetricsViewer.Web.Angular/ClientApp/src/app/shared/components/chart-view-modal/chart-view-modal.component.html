@@ -1,0 +1,17 @@
+<mat-form-field appearance="standard">
+  <mat-label>Range</mat-label>
+  <mat-select [(value)]="selectedRange" (selectionChange)="changeFilters($event)">
+    <mat-option></mat-option>
+    <mat-option [value]="option" *ngFor="let option of ranges">{{ option.display }}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div *ngIf="array4Lines; else elseBlock">
+  <app-line-chart [measurement]="measurement"
+                  [array4Lines]="array4Lines"></app-line-chart>
+</div>
+<ng-template #elseBlock>
+  <div class="content">
+    <app-spinner></app-spinner>
+  </div>
+</ng-template>

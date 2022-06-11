@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>191EEB7A-6279-40B4-8EA1-958AEE87A863</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MetaMetricsViewer.Api.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Dtos\MetaMetricsFiltersDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dtos\MetaMetricsRangeInfoDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dtos\MetaMetricsInstallationDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dtos\MetaMetricsMeasureDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dtos\MetaMetricsTimeLineDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dtos\MetaMetricsMeasureRequestDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dtos\MetaMetricsTime4LinesRequestDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dtos\MetaMetricsTimeLineRequestDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dtos\MetaMetricsTimeValueDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IMetaMetricsTimeValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)InfluxDBOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsConnector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsFilter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsInstallationMap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsMeasurementGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsMeasurementType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsQuery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsQueryExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsStringExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsTime4LinesPaginationDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsTimeLine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsTime4LinesDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsTimeValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsTitleAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MetaMetricsUsageAttribute.cs" />
+  </ItemGroup>
+</Project>

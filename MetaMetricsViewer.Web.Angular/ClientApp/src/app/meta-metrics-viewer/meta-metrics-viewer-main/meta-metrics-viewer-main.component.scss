@@ -1,0 +1,124 @@
+table {
+    width: 100%;
+}
+
+.main-viewport {
+    height: calc(100vh - 64px);
+}
+
+:host ::ng-deep div.mat-form-field-outline-start {
+    border-color: 0 !important;
+    border-width: 0px !important;
+}
+
+:host ::ng-deep .mat-form-field-outline-gap {
+    border-color: 0 !important;
+    border-width: 0px !important;
+}
+
+:host ::ng-deep .mat-form-field-outline-end {
+    border-color: 0 !important;
+    border-width: 0px !important;
+}
+
+::ng-deep .mat-input-element::placeholder {
+    color: #fff;
+    opacity: 0.7;
+    font-size: smaller;
+}
+
+.filter {
+    margin: 0 20px !important;
+    width: 40%;
+    padding-top: 10px !important;
+}
+
+.mat-column-position {
+    padding-right: 10px;
+}
+
+.mat-column-installation {
+    padding-right: 10px;
+}
+
+.mat-column-bis {
+    width: 120px;
+}
+
+.mat-row {
+    height: 150px;
+}
+
+.mat-dynamic-column {
+    width: 300px !important;
+}
+
+.mat-row {
+    &.highlighted {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+    &.highlightedOnHover:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+    }
+}
+
+.mat-sidenav-details {
+    width: 25%;
+}
+
+.mat-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    color: #fff;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+/*address scroll*/
+.mat-table {
+  overflow-x: scroll;
+}
+
+.mat-cell,
+.mat-header-cell {
+  word-wrap: initial;
+  display: table-cell;
+  padding: 0px 10px;
+  line-break: unset;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.mat-row,
+.mat-header-row {
+  display: table-row;
+}
+
+#filter-panel{
+    padding-left: 15px;
+    background-color: azure;
+}
+
+#filter-panel mat-form-field {
+  margin-right: 15px;
+}
+
+.c-p{
+    cursor:pointer;
+}
+
+.td-hidden {
+  display: none;
+}
+
+tr.mat-row:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
